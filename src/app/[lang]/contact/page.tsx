@@ -10,6 +10,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 export default async function ContactPage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   const d = dictionary.contact;
+  const services_d = dictionary.services;
 
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
@@ -66,7 +67,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="subject">{d.form.subject}</Label>
-                  <Input id="subject" placeholder={d.services.ctaButton} />
+                  <Input id="subject" placeholder={services_d.ctaButton} />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">{d.form.message}</Label>

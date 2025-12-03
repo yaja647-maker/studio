@@ -7,11 +7,17 @@ function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  const locales: string[] = [...i18n.locales];
+  // @ts-ignore locales are readonly
+  const locales: string[] = i18n.locales;
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   const defaultLocale = i18n.defaultLocale;
 
-  return matchLocale(languages, locales, defaultLocale);
+  try {
+    return matchLocale(languages, locales, defaultLocale);
+  } catch (e) {
+    console.warn(`Could not match locale for languages ${languages.join(', ')}`);
+    return defaultLocale;
+  }
 }
 
 export function middleware(request: NextRequest) {
