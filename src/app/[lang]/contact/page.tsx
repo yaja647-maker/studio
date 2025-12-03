@@ -1,16 +1,12 @@
 import { getDictionary } from '@/lib/get-dictionary';
 import { type Locale } from '@/lib/i18n-config';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { ContactForm } from '@/components/contact-form';
 
 export default async function ContactPage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   const d = dictionary.contact;
-  const services_d = dictionary.services;
 
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
@@ -55,29 +51,7 @@ export default async function ContactPage({ params: { lang } }: { params: { lang
             <CardHeader>
               <CardTitle className="font-headline">{d.form.submit}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <form className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">{d.form.name}</Label>
-                  <Input id="name" placeholder="John Doe" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">{d.form.email}</Label>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="subject">{d.form.subject}</Label>
-                  <Input id="subject" placeholder={services_d.ctaButton} />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">{d.form.message}</Label>
-                  <Textarea id="message" placeholder="..." />
-                </div>
-                <Button type="submit" className="w-full" onClick={(e) => e.preventDefault()}>
-                  {d.form.submit}
-                </Button>
-              </form>
-            </CardContent>
+            <ContactForm dictionary={dictionary} />
           </Card>
         </div>
       </div>
