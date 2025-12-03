@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-logistics",
+      "description": "A wide shot of a busy port with cranes and container ships.",
+      "imageUrl": "https://images.unsplash.com/photo-1712578582985-430e34bc6c7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0JTIwY29udGFpbmVyJTIwc2hpcHxlbnwwfHx8fDE3NjQ3ODg2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "port container ship"
+    },
+    {
+      "id": "service-sea-freight",
+      "description": "Container ship sailing on the open ocean.",
+      "imageUrl": "https://images.unsplash.com/photo-1689252688962-b5c03f6c9144?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb250YWluZXIlMjBzaGlwJTIwb2NlYW58ZW58MHx8fHwxNzY0Nzg4NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "container ship ocean"
+    },
+    {
+      "id": "service-air-freight",
+      "description": "A cargo plane being loaded with containers at an airport tarmac.",
+      "imageUrl": "https://images.unsplash.com/photo-1740499129855-c68d516b4a4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FyZ28lMjBwbGFuZSUyMGFpcnBvcnR8ZW58MHx8fHwxNzY0Nzg4NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cargo plane airport"
+    },
+    {
+      "id": "service-warehousing",
+      "description": "Interior of a large, modern warehouse with tall shelves and a forklift.",
+      "imageUrl": "https://images.unsplash.com/photo-1645736315000-6f788915923b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXJlaG91c2UlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzY0Nzc2MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "warehouse logistics"
+    },
+    {
+      "id": "about-us-team",
+      "description": "A diverse team of professionals in a modern office, looking at a logistics plan.",
+      "imageUrl": "https://images.unsplash.com/photo-1709715357549-f2d587846ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDB8fHx8MTc2NDc4ODY4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business team meeting"
+    }
+  ]
 }

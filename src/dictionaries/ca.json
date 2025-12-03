@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "Inici",
+    "services": "Serveis",
+    "about": "Qui Som",
+    "blog": "Blog",
+    "contact": "Contacte",
+    "quote": "Demanar Pressupost"
+  },
+  "home": {
+    "heroTitle": "Solucions Logístiques Globals",
+    "heroSubtitle": "Connectem el teu negoci amb el món. Eficiència, fiabilitat i tecnologia a cada enviament.",
+    "ctaButton": "Explora els nostres serveis"
+  },
+  "services": {
+    "title": "Els Nostres Serveis Logístics",
+    "subtitle": "Oferim solucions integrals adaptades a les necessitats de la teva cadena de subministrament.",
+    "seaFreight": {
+      "title": "Transport Marítim FCL/LCL",
+      "description": "Gestionem els teus enviaments marítims, ja siguin contenidors complets (FCL) o càrrega consolidada (LCL), optimitzant costos i temps de trànsit a les principals rutes globals.",
+      "spec1": "Incoterms: EXW, FOB, CIF",
+      "spec2": "Contenidors: 20', 40', HC, Reefer",
+      "spec3": "Trànsit mitjà Àsia-Europa: 30-40 dies"
+    },
+    "airFreight": {
+      "title": "Càrrega Aèria Express",
+      "description": "La solució més ràpida per a les teves mercaderies urgents. Garantim la màxima prioritat i seguretat per als teus enviaments crítics a través de la nostra xarxa aèria premium.",
+      "spec1": "Lliuraments globals: 24-72 hores",
+      "spec2": "Codi HS i documentació IATA",
+      "spec3": "Càrrega segura (SPX, SCO)"
+    },
+    "warehousing": {
+      "title": "Emmagatzematge i Distribució",
+      "description": "Instal·lacions modernes equipades amb sistemes de gestió de magatzem (SGA/WMS) per a un control d'inventari precís i serveis de valor afegit com picking, packing i distribució capil·lar.",
+      "spec1": "Magatzem sec i Tª controlada",
+      "spec2": "Integració SGA/WMS",
+      "spec3": "Serveis de cross-docking"
+    },
+    "ctaButton": "Cotitzar Ara"
+  },
+  "about": {
+    "title": "La Nostra Missió",
+    "subtitle": "Impulsant el comerç global amb solucions logístiques innovadores i un compromís indestructible amb els nostres clients.",
+    "p1": "Fundada el 2010 a Barcelona, TransGlobal Solutions va néixer amb l'objectiu de simplificar la complexitat de la logística internacional. El nostre equip, format per experts en comerç exterior, transport i tecnologia, treballa per oferir un servei transparent, eficient i personalitzat.",
+    "p2": "Creiem en la tecnologia com a pilar fonamental. Per això, invertim constantment en sistemes de seguiment en temps real, plataformes de gestió intuïtives i solucions d'automatització que aporten valor real a la cadena de subministrament dels nostres socis. La nostra missió és ser més que un proveïdor; aspirem a ser el teu aliat estratègic en logística."
+  },
+  "contact": {
+    "title": "Contacta amb Nosaltres",
+    "subtitle": "Tens un projecte o necessites una cotització? El nostre equip està preparat per ajudar-te. Omple el formulari o utilitza les nostres dades de contacte directe.",
+    "infoTitle": "Informació de Contacte",
+    "address": "Adreça",
+    "addressValue": "Carrer de la Logística, 123, 08039 Barcelona, Espanya",
+    "email": "Correu Electrònic",
+    "emailValue": "contact@transglobalsolutions.com",
+    "phone": "Telèfon",
+    "phoneValue": "+34 930 123 456",
+    "form": {
+      "name": "Nom complet",
+      "email": "Correu electrònic",
+      "subject": "Assumpte",
+      "message": "El teu missatge",
+      "submit": "Enviar Missatge"
+    }
+  },
+  "blog": {
+    "title": "Blog i Eines",
+    "subtitle": "Mantén-te al dia amb les últimes notícies del sector i utilitza les nostres eines per optimitzar les teves operacions."
+  },
+  "imageEnhancer": {
+    "title": "Millorador d'Imatges Logístiques amb IA",
+    "uploadLabel": "Puja una imatge",
+    "uploadDescription": "Mida màxima 4MB. Formats recomanats: JPG, PNG.",
+    "enhanceButton": "Millorar Imatge",
+    "enhancing": "Millorant...",
+    "originalTitle": "Original",
+    "enhancedTitle": "Millorada",
+    "originalPlaceholder": "La teva imatge original apareixerà aquí.",
+    "enhancedPlaceholder": "La imatge millorada per IA apareixerà aquí.",
+    "error": "Error",
+    "fileTooLarge": "El fitxer és massa gran.",
+    "enhancementFailed": "La millora ha fallat. Si us plau, intenta-ho de nou."
+  },
+  "footer": {
+    "slogan": "La teva logística, simplificada.",
+    "quickLinks": "Enllaços Ràpids",
+    "about": "Qui Som",
+    "services": "Serveis",
+    "contact": "Contacte",
+    "blog": "Blog",
+    "legal": "Legal",
+    "legalNotice": "Avís Legal",
+    "privacyPolicy": "Política de Privacitat",
+    "cookiesPolicy": "Política de Cookies",
+    "contactUs": "Contacta'ns",
+    "rightsReserved": "Tots els drets reservats."
+  },
+  "legal": {
+    "legalTitle": "Avís Legal",
+    "privacyTitle": "Política de Privacitat",
+    "cookiesTitle": "Política de Cookies",
+    "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TransGlobal Solutions (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
+  }
+}

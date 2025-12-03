@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "quote": "Demander un Devis"
+  },
+  "home": {
+    "heroTitle": "Solutions Logistiques Mondiales",
+    "heroSubtitle": "Connecter votre entreprise au monde. Efficacité, fiabilité et technologie à chaque envoi.",
+    "ctaButton": "Découvrez nos services"
+  },
+  "services": {
+    "title": "Nos Services Logistiques",
+    "subtitle": "Nous offrons des solutions complètes adaptées aux besoins de votre chaîne d'approvisionnement.",
+    "seaFreight": {
+      "title": "Fret Maritime FCL/LCL",
+      "description": "Nous gérons vos expéditions maritimes, qu'il s'agisse de conteneurs complets (FCL) ou de groupage (LCL), en optimisant les coûts et les temps de transit sur les principales routes mondiales.",
+      "spec1": "Incoterms: EXW, FOB, CIF",
+      "spec2": "Conteneurs: 20', 40', HC, Reefer",
+      "spec3": "Transit moyen Asie-Europe: 30-40 jours"
+    },
+    "airFreight": {
+      "title": "Fret Aérien Express",
+      "description": "La solution la plus rapide pour vos marchandises urgentes. Nous garantissons une priorité et une sécurité maximales pour vos envois critiques via notre réseau aérien premium.",
+      "spec1": "Livraisons mondiales: 24-72 heures",
+      "spec2": "Code HS & Documentation IATA",
+      "spec3": "Fret sécurisé (SPX, SCO)"
+    },
+    "warehousing": {
+      "title": "Entreposage et Distribution",
+      "description": "Installations modernes équipées de systèmes de gestion d'entrepôt (WMS) pour un contrôle précis des stocks et des services à valeur ajoutée comme le picking, le packing et la distribution capillaire.",
+      "spec1": "Stockage sec et T° contrôlée",
+      "spec2": "Intégration WMS",
+      "spec3": "Services de cross-docking"
+    },
+    "ctaButton": "Obtenir un devis"
+  },
+  "about": {
+    "title": "Notre Mission",
+    "subtitle": "Stimuler le commerce mondial avec des solutions logistiques innovantes et un engagement indéfectible envers nos clients.",
+    "p1": "Fondée en 2010 à Barcelone, TransGlobal Solutions est née dans le but de simplifier la complexité de la logistique internationale. Notre équipe, composée d'experts en commerce extérieur, transport et technologie, s'efforce d'offrir un service transparent, efficace et personnalisé.",
+    "p2": "Nous croyons en la technologie comme pilier fondamental. C'est pourquoi nous investissons constamment dans des systèmes de suivi en temps réel, des plateformes de gestion intuitives et des solutions d'automatisation qui apportent une réelle valeur à la chaîne d'approvisionnement de nos partenaires. Notre mission est d'être plus qu'un simple fournisseur ; nous aspirons à être votre allié stratégique en logistique."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez un projet ou besoin d'un devis ? Notre équipe est prête à vous aider. Remplissez le formulaire ou utilisez nos coordonnées directes.",
+    "infoTitle": "Coordonnées",
+    "address": "Adresse",
+    "addressValue": "123 Rue de la Logistique, 08039 Barcelone, Espagne",
+    "email": "E-mail",
+    "emailValue": "contact@transglobalsolutions.com",
+    "phone": "Téléphone",
+    "phoneValue": "+34 930 123 456",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "submit": "Envoyer le Message"
+    }
+  },
+  "blog": {
+    "title": "Blog et Outils",
+    "subtitle": "Restez informé des dernières actualités du secteur et utilisez nos outils pour optimiser vos opérations."
+  },
+  "imageEnhancer": {
+    "title": "Améliorateur d'Images Logistiques par IA",
+    "uploadLabel": "Télécharger une image",
+    "uploadDescription": "Taille maximale 4Mo. Formats recommandés : JPG, PNG.",
+    "enhanceButton": "Améliorer l'Image",
+    "enhancing": "Amélioration...",
+    "originalTitle": "Originale",
+    "enhancedTitle": "Améliorée",
+    "originalPlaceholder": "Votre image originale apparaîtra ici.",
+    "enhancedPlaceholder": "L'image améliorée par l'IA apparaîtra ici.",
+    "error": "Erreur",
+    "fileTooLarge": "Le fichier est trop volumineux.",
+    "enhancementFailed": "L'amélioration a échoué. Veuillez réessayer."
+  },
+  "footer": {
+    "slogan": "Votre logistique, simplifiée.",
+    "quickLinks": "Liens Rapides",
+    "about": "À Propos",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog",
+    "legal": "Légal",
+    "legalNotice": "Mentions Légales",
+    "privacyPolicy": "Politique de Confidentialité",
+    "cookiesPolicy": "Politique de Cookies",
+    "contactUs": "Contactez-nous",
+    "rightsReserved": "Tous droits réservés."
+  },
+  "legal": {
+    "legalTitle": "Mentions Légales",
+    "privacyTitle": "Politique de Confidentialité",
+    "cookiesTitle": "Politique de Cookies",
+    "content": "Ceci est une page d'exemple. Le contenu juridique complet doit être rédigé par un professionnel. Ce texte sert d'espace réservé pour démontrer la structure de la page. TransGlobal Solutions (nom fictif) est présentée comme une société de services logistiques. Toutes les informations, images et données techniques sont simulées à des fins éducatives dans le cadre d'un projet Firebase Studio."
+  }
+}
