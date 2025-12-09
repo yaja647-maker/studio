@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Search, MapPin, Package, Calendar, Ship } from 'lucide-react';
-import { getDictionary } from '@/lib/get-dictionary';
 import { type Locale } from '@/lib/i18n-config';
 
 type Shipment = {
@@ -19,6 +18,11 @@ type Shipment = {
   estat: 'En magatzem' | 'En trànsit' | 'Lliurat';
 };
 
+// Lazy load getDictionary
+const getDictionary = (lang: Locale) =>
+  import(`@/dictionaries/${lang}.json`).then(module => module.default);
+
+
 export default function TrackingPage({ params: { lang } }: { params: { lang: Locale } }) {
   const [trackingCode, setTrackingCode] = useState('');
   const [shipment, setShipment] = useState<Shipment | null>(null);
@@ -26,9 +30,9 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
   const [isLoading, setIsLoading] = useState(false);
   const [dictionary, setDictionary] = useState<any>(null);
 
-  useState(() => {
+  useEffect(() => {
     getDictionary(lang).then(setDictionary);
-  });
+  }, [lang]);
 
   const handleSearch = async () => {
     if (!trackingCode) return;
