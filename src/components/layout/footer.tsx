@@ -26,6 +26,7 @@ export function Footer({
             <ul className="space-y-2">
               <li><Link href={`/${lang}/about`} className="hover:text-primary transition-colors">{dictionary.about}</Link></li>
               <li><Link href={`/${lang}/services`} className="hover:text-primary transition-colors">{dictionary.services}</Link></li>
+              <li><Link href={`/${lang}/tracking`} className="hover:text-primary transition-colors">{dictionary.tracking}</Link></li>
               <li><Link href={`/${lang}/contact`} className="hover:text-primary transition-colors">{dictionary.contact}</Link></li>
               <li><Link href={`/${lang}/blog`} className="hover:text-primary transition-colors">{dictionary.blog}</Link></li>
             </ul>

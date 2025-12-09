@@ -5,7 +5,8 @@
     "about": "Qui Som",
     "blog": "Blog",
     "contact": "Contacte",
-    "quote": "Demanar Pressupost"
+    "quote": "Demanar Pressupost",
+    "tracking": "Seguiment"
   },
   "home": {
     "heroTitle": "Solucions Logístiques Globals",
@@ -59,7 +60,8 @@
       "email": "Correu electrònic",
       "subject": "Assumpte",
       "message": "El teu missatge",
-      "submit": "Enviar Missatge"
+      "submit": "Enviar Missatge",
+      "subjectPlaceholder": "Informació sobre serveis"
     }
   },
   "blog": {
@@ -92,12 +94,31 @@
     "privacyPolicy": "Política de Privacitat",
     "cookiesPolicy": "Política de Cookies",
     "contactUs": "Contacta'ns",
-    "rightsReserved": "Tots els drets reservats."
+    "rightsReserved": "Tots els drets reservats.",
+    "tracking": "Seguiment"
   },
   "legal": {
     "legalTitle": "Avís Legal",
     "privacyTitle": "Política de Privacitat",
     "cookiesTitle": "Política de Cookies",
     "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TransGlobal Solutions (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
+  },
+  "tracking": {
+    "title": "Localitza el teu enviament",
+    "subtitle": "Introdueix el teu codi de seguiment per veure l'estat actual del teu enviament.",
+    "inputPlaceholder": "Ex: TGS123456789",
+    "searchButton": "Cercar",
+    "searching": "Cercant...",
+    "notFound": "Codi d'enviament no trobat. Si us plau, verifica'l i torna-ho a provar.",
+    "fetchError": "No s'ha pogut realitzar la cerca. Intenta-ho de nou més tard.",
+    "resultsTitle": "Resultats de l'Enviament",
+    "origin": "Origen",
+    "destination": "Destí",
+    "eta": "Data de lliurament prevista (ETA)",
+    "currentLocation": "Ubicació Actual",
+    "statusWarehouse": "En magatzem",
+    "statusTransit": "En trànsit",
+    "statusDelivered": "Lliurat",
+    "statusUnknown": "Desconegut"
   }
 }

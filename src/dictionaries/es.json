@@ -5,7 +5,8 @@
     "about": "Quiénes Somos",
     "blog": "Blog",
     "contact": "Contacto",
-    "quote": "Pedir Presupuesto"
+    "quote": "Pedir Presupuesto",
+    "tracking": "Seguimiento"
   },
   "home": {
     "heroTitle": "Soluciones Logísticas Globales",
@@ -59,7 +60,8 @@
       "email": "Correo electrónico",
       "subject": "Asunto",
       "message": "Tu mensaje",
-      "submit": "Enviar Mensaje"
+      "submit": "Enviar Mensaje",
+      "subjectPlaceholder": "Información sobre servicios"
     }
   },
   "blog": {
@@ -92,12 +94,31 @@
     "privacyPolicy": "Política de Privacidad",
     "cookiesPolicy": "Política de Cookies",
     "contactUs": "Contáctanos",
-    "rightsReserved": "Todos los derechos reservados."
+    "rightsReserved": "Todos los derechos reservados.",
+    "tracking": "Seguimiento"
   },
   "legal": {
     "legalTitle": "Aviso Legal",
     "privacyTitle": "Política de Privacidad",
     "cookiesTitle": "Política de Cookies",
     "content": "Esta es una página de muestra. El contenido legal completo debe ser redactado por un profesional. Este texto sirve como marcador de posición para demostrar la estructura de la página. TransGlobal Solutions (nombre ficticio) se presenta como una empresa de servicios logísticos. Toda la información, imágenes y datos técnicos son simulados con fines educativos en el marco de un proyecto de Firebase Studio."
+  },
+  "tracking": {
+    "title": "Localiza tu envío",
+    "subtitle": "Introduce tu código de seguimiento para ver el estado actual de tu envío.",
+    "inputPlaceholder": "Ej: TGS123456789",
+    "searchButton": "Buscar",
+    "searching": "Buscando...",
+    "notFound": "Código de envío no encontrado. Por favor, verifícalo e inténtalo de nuevo.",
+    "fetchError": "No se pudo realizar la búsqueda. Inténtalo de nuevo más tarde.",
+    "resultsTitle": "Resultados del Envío",
+    "origin": "Origen",
+    "destination": "Destino",
+    "eta": "Fecha de entrega prevista (ETA)",
+    "currentLocation": "Ubicación Actual",
+    "statusWarehouse": "En almacén",
+    "statusTransit": "En tránsito",
+    "statusDelivered": "Entregado",
+    "statusUnknown": "Desconocido"
   }
 }

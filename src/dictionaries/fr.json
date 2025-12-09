@@ -5,7 +5,8 @@
     "about": "À Propos",
     "blog": "Blog",
     "contact": "Contact",
-    "quote": "Demander un Devis"
+    "quote": "Demander un Devis",
+    "tracking": "Suivi"
   },
   "home": {
     "heroTitle": "Solutions Logistiques Mondiales",
@@ -59,7 +60,8 @@
       "email": "Adresse e-mail",
       "subject": "Sujet",
       "message": "Votre message",
-      "submit": "Envoyer le Message"
+      "submit": "Envoyer le Message",
+      "subjectPlaceholder": "Informations sur les services"
     }
   },
   "blog": {
@@ -92,12 +94,31 @@
     "privacyPolicy": "Politique de Confidentialité",
     "cookiesPolicy": "Politique de Cookies",
     "contactUs": "Contactez-nous",
-    "rightsReserved": "Tous droits réservés."
+    "rightsReserved": "Tous droits réservés.",
+    "tracking": "Suivi"
   },
   "legal": {
     "legalTitle": "Mentions Légales",
     "privacyTitle": "Politique de Confidentialité",
     "cookiesTitle": "Politique de Cookies",
     "content": "Ceci est une page d'exemple. Le contenu juridique complet doit être rédigé par un professionnel. Ce texte sert d'espace réservé pour démontrer la structure de la page. TransGlobal Solutions (nom fictif) est présentée comme une société de services logistiques. Toutes les informations, images et données techniques sont simulées à des fins éducatives dans le cadre d'un projet Firebase Studio."
+  },
+  "tracking": {
+    "title": "Suivez votre envoi",
+    "subtitle": "Entrez votre code de suivi pour voir le statut actuel de votre envoi.",
+    "inputPlaceholder": "Ex: TGS123456789",
+    "searchButton": "Rechercher",
+    "searching": "Recherche...",
+    "notFound": "Code d'expédition non trouvé. Veuillez le vérifier et réessayer.",
+    "fetchError": "La recherche n'a pas pu être effectuée. Veuillez réessayer plus tard.",
+    "resultsTitle": "Résultats de l'expédition",
+    "origin": "Origine",
+    "destination": "Destination",
+    "eta": "Date de livraison estimée (ETA)",
+    "currentLocation": "Emplacement Actuel",
+    "statusWarehouse": "En entrepôt",
+    "statusTransit": "En transit",
+    "statusDelivered": "Livré",
+    "statusUnknown": "Inconnu"
   }
 }

@@ -5,7 +5,8 @@
     "about": "About Us",
     "blog": "Blog",
     "contact": "Contact",
-    "quote": "Request a Quote"
+    "quote": "Request a Quote",
+    "tracking": "Tracking"
   },
   "home": {
     "heroTitle": "Global Logistics Solutions",
@@ -59,7 +60,8 @@
       "email": "Email address",
       "subject": "Subject",
       "message": "Your message",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "subjectPlaceholder": "Information about services"
     }
   },
   "blog": {
@@ -92,12 +94,31 @@
     "privacyPolicy": "Privacy Policy",
     "cookiesPolicy": "Cookies Policy",
     "contactUs": "Contact Us",
-    "rightsReserved": "All rights reserved."
+    "rightsReserved": "All rights reserved.",
+    "tracking": "Tracking"
   },
   "legal": {
     "legalTitle": "Legal Notice",
     "privacyTitle": "Privacy Policy",
     "cookiesTitle": "Cookies Policy",
     "content": "This is a sample page. The full legal content should be written by a professional. This text serves as a placeholder to demonstrate the page structure. TransGlobal Solutions (fictitious name) is presented as a logistics services company. All information, images, and technical data are simulated for educational purposes within a Firebase Studio project."
+  },
+  "tracking": {
+    "title": "Track Your Shipment",
+    "subtitle": "Enter your tracking code to see the current status of your shipment.",
+    "inputPlaceholder": "e.g., TGS123456789",
+    "searchButton": "Search",
+    "searching": "Searching...",
+    "notFound": "Shipment code not found. Please check it and try again.",
+    "fetchError": "Could not perform the search. Please try again later.",
+    "resultsTitle": "Shipment Results",
+    "origin": "Origin",
+    "destination": "Destination",
+    "eta": "Estimated Delivery Date (ETA)",
+    "currentLocation": "Current Location",
+    "statusWarehouse": "In Warehouse",
+    "statusTransit": "In Transit",
+    "statusDelivered": "Delivered",
+    "statusUnknown": "Unknown"
   }
 }

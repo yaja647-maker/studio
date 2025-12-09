@@ -34,6 +34,7 @@ export function Header({
   const navItems: NavItem[] = [
     { href: `/${lang}`, label: dictionary.home },
     { href: `/${lang}/services`, label: dictionary.services },
+    { href: `/${lang}/tracking`, label: dictionary.tracking },
     { href: `/${lang}/about`, label: dictionary.about },
     { href: `/${lang}/blog`, label: dictionary.blog },
     { href: `/${lang}/contact`, label: dictionary.contact },
@@ -55,7 +56,7 @@ export function Header({
               href={item.href}
               className={cn(
                 'text-sm font-medium transition-colors hover:text-primary',
-                activePath === item.href ? 'text-primary' : 'text-foreground'
+                activePath.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (activePath === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
               )}
             >
               {item.label}
@@ -89,7 +90,7 @@ export function Header({
                       href={item.href}
                       className={cn(
                         'text-lg font-medium transition-colors hover:text-primary',
-                         activePath === item.href ? 'text-primary' : 'text-foreground'
+                         activePath.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (activePath === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
                       )}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
