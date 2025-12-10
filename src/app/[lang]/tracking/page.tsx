@@ -11,11 +11,11 @@ import { type Locale } from '@/lib/i18n-config';
 
 type Shipment = {
   tracking_code: string;
-  origen: string;
-  desti: string;
+  origin: string;
+  destination: string;
   eta: string;
-  ubicacio_actual: string;
-  estat: 'En magatzem' | 'En trànsit' | 'Lliurat';
+  location: string;
+  status: 'En magatzem' | 'En trànsit' | 'Entregado';
 };
 
 const API_URL = 'https://sheetdb.io/api/v1/b3co8gke4ph6w';
@@ -62,14 +62,14 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
     }
   };
 
-  const getProgressProps = (status: Shipment['estat']): { value: number; colorClass: string; label: string } => {
+  const getProgressProps = (status: Shipment['status']): { value: number; colorClass: string; label: string } => {
     if (!dictionary) return { value: 0, colorClass: '', label: '' };
     switch (status) {
       case 'En magatzem':
         return { value: 10, colorClass: 'bg-orange-500', label: dictionary.tracking.statusWarehouse };
       case 'En trànsit':
         return { value: 50, colorClass: 'bg-blue-500', label: dictionary.tracking.statusTransit };
-      case 'Lliurat':
+      case 'Entregado':
         return { value: 100, colorClass: 'bg-green-500', label: dictionary.tracking.statusDelivered };
       default:
         return { value: 0, colorClass: 'bg-gray-500', label: dictionary.tracking.statusUnknown };
@@ -79,7 +79,7 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
   if (!dictionary) return null;
   const d = dictionary.tracking;
 
-  const progressProps = shipment ? getProgressProps(shipment.estat) : null;
+  const progressProps = shipment ? getProgressProps(shipment.status) : null;
   
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
@@ -134,14 +134,14 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
                   <Package className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">{d.origin}</p>
-                    <p className="text-muted-foreground">{shipment.origen}</p>
+                    <p className="text-muted-foreground">{shipment.origin}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Ship className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">{d.destination}</p>
-                    <p className="text-muted-foreground">{shipment.desti}</p>
+                    <p className="text-muted-foreground">{shipment.destination}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -155,7 +155,7 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
                   <MapPin className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="font-semibold">{d.currentLocation}</p>
-                    <p className="text-muted-foreground">{shipment.ubicacio_actual}</p>
+                    <p className="text-muted-foreground">{shipment.location}</p>
                   </div>
                 </div>
               </div>
