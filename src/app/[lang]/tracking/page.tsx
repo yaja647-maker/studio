@@ -18,6 +18,49 @@ type Shipment = {
   estat: 'En magatzem' | 'En trànsit' | 'Lliurat';
 };
 
+const mockShipments: Shipment[] = [
+  {
+    tracking_code: 'TRK-001',
+    origen: 'Shenzhen',
+    desti: 'València',
+    eta: '20/10/2025',
+    ubicacio_actual: 'Port de València',
+    estat: 'En magatzem',
+  },
+  {
+    tracking_code: 'TRK-002',
+    origen: 'Hamburg',
+    desti: 'Algesires',
+    eta: '05/11/2025',
+    ubicacio_actual: 'Estret de Gibraltar',
+    estat: 'En trànsit',
+  },
+  {
+    tracking_code: 'TRK-003',
+    origen: 'Los Angeles',
+    desti: 'Tarragona',
+    eta: '01/12/2025',
+    ubicacio_actual: 'Magatzem central, Tarragona',
+    estat: 'Lliurat',
+  },
+  {
+    tracking_code: 'TRK-004',
+    origen: 'Xangai',
+    desti: 'Barcelona',
+    eta: '15/12/2025',
+    ubicacio_actual: 'Carrer de la Marina, Barcelona',
+    estat: 'Lliurat',
+  },
+  {
+    tracking_code: 'TRK-005',
+    origen: 'Singapur',
+    desti: 'Bilbao',
+    eta: '28/11/2025',
+    ubicacio_actual: 'Golf de Biscaia',
+    estat: 'En trànsit',
+  },
+];
+
 // Lazy load getDictionary
 const getDictionary = (lang: Locale) =>
   import(`@/dictionaries/${lang}.json`).then(module => module.default);
@@ -34,25 +77,22 @@ export default function TrackingPage({ params: { lang } }: { params: { lang: Loc
     getDictionary(lang).then(setDictionary);
   }, [lang]);
 
-  const handleSearch = async () => {
+  const handleSearch = () => {
     if (!trackingCode) return;
     setIsLoading(true);
     setError(null);
     setShipment(null);
 
-    try {
-      const response = await fetch(`https://sheetdb.io/api/v1/b3co8gke4ph6w/search?tracking_code=${trackingCode}`);
-      const data: Shipment[] = await response.json();
-      if (data.length > 0) {
-        setShipment(data[0]);
+    setTimeout(() => {
+      const foundShipment = mockShipments.find(s => s.tracking_code.toLowerCase() === trackingCode.toLowerCase());
+      
+      if (foundShipment) {
+        setShipment(foundShipment);
       } else {
         setError(dictionary.tracking.notFound);
       }
-    } catch (err) {
-      setError(dictionary.tracking.fetchError);
-    } finally {
       setIsLoading(false);
-    }
+    }, 500);
   };
 
   const getProgressProps = (status: Shipment['estat']): { value: number; colorClass: string; label: string } => {
