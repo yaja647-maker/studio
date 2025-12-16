@@ -138,7 +138,7 @@
   },
   "dashboard": {
     "title": "Mi Perfil",
-    "subtitle": "Bienvenido a tu espacio personal.",
+    "subtitle": "Bienvenido a tu zona privada, [NOM_USUARI].",
     "nameLabel": "Nombre de usuario",
     "companyLabel": "Empresa",
     "logoutButton": "Cerrar Sesión"

@@ -55,7 +55,7 @@ export default function DashboardPage({ params: { lang } }: { params: { lang: Lo
               <AvatarFallback className="text-4xl bg-primary/20">{getInitials(user.nom)}</AvatarFallback>
             </Avatar>
             <CardTitle className="text-3xl font-headline">{d.title}</CardTitle>
-            <CardDescription>{d.subtitle}</CardDescription>
+            <CardDescription>{d.subtitle.replace('[NOM_USUARI]', user.nom)}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="flex items-center gap-4 p-4 border rounded-lg">
@@ -73,7 +73,7 @@ export default function DashboardPage({ params: { lang } }: { params: { lang: Lo
                 </div>
             </div>
              <Button onClick={handleLogout} variant="outline" className="w-full">
-              <LogOut className="mr-2" />
+              <LogOut className="mr-2 h-4 w-4" />
               {d.logoutButton}
             </Button>
           </CardContent>

@@ -138,7 +138,7 @@
   },
   "dashboard": {
     "title": "My Dashboard",
-    "subtitle": "Welcome to your personal space.",
+    "subtitle": "Welcome to your private area, [NOM_USUARI].",
     "nameLabel": "User Name",
     "companyLabel": "Company",
     "logoutButton": "Logout"

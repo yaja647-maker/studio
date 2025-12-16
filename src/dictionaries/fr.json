@@ -138,7 +138,7 @@
   },
   "dashboard": {
     "title": "Mon Tableau de Bord",
-    "subtitle": "Bienvenue dans votre espace personnel.",
+    "subtitle": "Bienvenue dans votre espace privé, [NOM_USUARI].",
     "nameLabel": "Nom d'utilisateur",
     "companyLabel": "Entreprise",
     "logoutButton": "Déconnexion"

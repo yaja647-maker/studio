@@ -138,7 +138,7 @@
   },
   "dashboard": {
     "title": "Meu Painel",
-    "subtitle": "Bem-vindo ao seu espaço pessoal.",
+    "subtitle": "Bem-vindo ao seu espaço privado, [NOM_USUARI].",
     "nameLabel": "Nome de usuário",
     "companyLabel": "Empresa",
     "logoutButton": "Sair"
