@@ -6,7 +6,9 @@
     "blog": "Blog",
     "contact": "Contact",
     "quote": "Demander un Devis",
-    "tracking": "Suivi"
+    "tracking": "Suivi",
+    "login": "Connexion",
+    "dashboard": "Tableau de bord"
   },
   "home": {
     "heroTitle": "Solutions Logistiques Mondiales",
@@ -120,5 +122,25 @@
     "statusTransit": "En transit",
     "statusDelivered": "Livré",
     "statusUnknown": "Inconnu"
+  },
+  "login": {
+    "title": "Accès Utilisateur",
+    "subtitle": "Entrez vos identifiants pour accéder à votre tableau de bord.",
+    "userLabel": "Nom d'utilisateur",
+    "userPlaceholder": "Votre nom d'utilisateur",
+    "passwordLabel": "Mot de passe",
+    "loginButton": "Entrer",
+    "loggingIn": "Connexion...",
+    "incorrectData": "Nom d'utilisateur ou mot de passe incorrect.",
+    "loginError": "Impossible de se connecter. Veuillez réessayer plus tard.",
+    "fillFields": "Veuillez remplir tous les champs.",
+    "backToHome": "Retour à l'accueil"
+  },
+  "dashboard": {
+    "title": "Mon Tableau de Bord",
+    "subtitle": "Bienvenue dans votre espace personnel.",
+    "nameLabel": "Nom d'utilisateur",
+    "companyLabel": "Entreprise",
+    "logoutButton": "Déconnexion"
   }
 }

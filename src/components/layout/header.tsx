@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, Ship } from 'lucide-react';
+import { Menu, Ship, LogIn } from 'lucide-react';
 
 import type { Locale } from '@/lib/i18n-config';
 import { cn } from '@/lib/utils';
@@ -26,9 +26,15 @@ export function Header({
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activePath, setActivePath] = useState(pathname);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     setActivePath(pathname);
+    // Check localStorage only on client side
+    if (typeof window !== 'undefined') {
+      const user = localStorage.getItem('user');
+      setIsLoggedIn(!!user);
+    }
   }, [pathname]);
 
   const navItems: NavItem[] = [
@@ -64,9 +70,18 @@ export function Header({
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-4">
-           <Button asChild>
-              <Link href={`/${lang}/contact`}>{dictionary.quote}</Link>
-           </Button>
+           {isLoggedIn ? (
+             <Button asChild>
+                <Link href={`/${lang}/dashboard`}>{dictionary.dashboard}</Link>
+             </Button>
+           ) : (
+             <Button asChild variant="outline">
+                <Link href={`/${lang}/login`}>
+                  <LogIn className="mr-2 h-4 w-4" />
+                  {dictionary.login}
+                </Link>
+             </Button>
+           )}
            <LanguageSwitcher />
         </div>
         <div className="md:hidden">
@@ -99,9 +114,15 @@ export function Header({
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
-                    <Button asChild>
-                        <Link href={`/${lang}/contact`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.quote}</Link>
-                    </Button>
+                    {isLoggedIn ? (
+                       <Button asChild>
+                          <Link href={`/${lang}/dashboard`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.dashboard}</Link>
+                       </Button>
+                     ) : (
+                       <Button asChild>
+                          <Link href={`/${lang}/login`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.login}</Link>
+                       </Button>
+                     )}
                     <LanguageSwitcher />
                 </div>
               </div>

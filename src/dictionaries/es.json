@@ -6,7 +6,9 @@
     "blog": "Blog",
     "contact": "Contacto",
     "quote": "Pedir Presupuesto",
-    "tracking": "Seguimiento"
+    "tracking": "Seguimiento",
+    "login": "Acceder",
+    "dashboard": "Perfil"
   },
   "home": {
     "heroTitle": "Soluciones Logísticas Globales",
@@ -120,5 +122,25 @@
     "statusTransit": "En tránsito",
     "statusDelivered": "Entregado",
     "statusUnknown": "Desconocido"
+  },
+  "login": {
+    "title": "Acceso de Usuarios",
+    "subtitle": "Introduce tus credenciales para acceder a tu panel.",
+    "userLabel": "Usuario",
+    "userPlaceholder": "Tu usuario",
+    "passwordLabel": "Contraseña",
+    "loginButton": "Entrar",
+    "loggingIn": "Entrando...",
+    "incorrectData": "Los datos de usuario o contraseña son incorrectos.",
+    "loginError": "No se pudo iniciar sesión. Inténtalo más tarde.",
+    "fillFields": "Por favor, rellena todos los campos.",
+    "backToHome": "Volver al inicio"
+  },
+  "dashboard": {
+    "title": "Mi Perfil",
+    "subtitle": "Bienvenido a tu espacio personal.",
+    "nameLabel": "Nombre de usuario",
+    "companyLabel": "Empresa",
+    "logoutButton": "Cerrar Sesión"
   }
 }

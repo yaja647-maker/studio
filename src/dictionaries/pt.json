@@ -6,7 +6,9 @@
     "blog": "Blog",
     "contact": "Contato",
     "quote": "Pedir Orçamento",
-    "tracking": "Rastreamento"
+    "tracking": "Rastreamento",
+    "login": "Acessar",
+    "dashboard": "Painel"
   },
   "home": {
     "heroTitle": "Soluções Logísticas Globais",
@@ -120,5 +122,25 @@
     "statusTransit": "Em trânsito",
     "statusDelivered": "Entregue",
     "statusUnknown": "Desconhecido"
+  },
+    "login": {
+    "title": "Acesso de Usuário",
+    "subtitle": "Digite suas credenciais para acessar seu painel.",
+    "userLabel": "Usuário",
+    "userPlaceholder": "Seu usuário",
+    "passwordLabel": "Senha",
+    "loginButton": "Entrar",
+    "loggingIn": "Entrando...",
+    "incorrectData": "Usuário ou senha incorretos.",
+    "loginError": "Não foi possível fazer login. Tente novamente mais tarde.",
+    "fillFields": "Por favor, preencha todos os campos.",
+    "backToHome": "Voltar para o início"
+  },
+  "dashboard": {
+    "title": "Meu Painel",
+    "subtitle": "Bem-vindo ao seu espaço pessoal.",
+    "nameLabel": "Nome de usuário",
+    "companyLabel": "Empresa",
+    "logoutButton": "Sair"
   }
 }

@@ -6,7 +6,9 @@
     "blog": "Blog",
     "contact": "Contact",
     "quote": "Request a Quote",
-    "tracking": "Tracking"
+    "tracking": "Tracking",
+    "login": "Login",
+    "dashboard": "Dashboard"
   },
   "home": {
     "heroTitle": "Global Logistics Solutions",
@@ -120,5 +122,25 @@
     "statusTransit": "In Transit",
     "statusDelivered": "Delivered",
     "statusUnknown": "Unknown"
+  },
+  "login": {
+    "title": "User Login",
+    "subtitle": "Enter your credentials to access your dashboard.",
+    "userLabel": "Username",
+    "userPlaceholder": "Your username",
+    "passwordLabel": "Password",
+    "loginButton": "Login",
+    "loggingIn": "Logging in...",
+    "incorrectData": "Incorrect username or password.",
+    "loginError": "Could not log in. Please try again later.",
+    "fillFields": "Please fill in all fields.",
+    "backToHome": "Back to Home"
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "subtitle": "Welcome to your personal space.",
+    "nameLabel": "User Name",
+    "companyLabel": "Company",
+    "logoutButton": "Logout"
   }
 }

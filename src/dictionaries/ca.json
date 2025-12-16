@@ -6,7 +6,9 @@
     "blog": "Blog",
     "contact": "Contacte",
     "quote": "Demanar Pressupost",
-    "tracking": "Seguiment"
+    "tracking": "Seguiment",
+    "login": "Accedir",
+    "dashboard": "Perfil"
   },
   "home": {
     "heroTitle": "Solucions Logístiques Globals",
@@ -120,5 +122,25 @@
     "statusTransit": "En trànsit",
     "statusDelivered": "Lliurat",
     "statusUnknown": "Desconegut"
+  },
+  "login": {
+    "title": "Accés d'Usuaris",
+    "subtitle": "Introdueix les teves credencials per accedir al teu panell.",
+    "userLabel": "Usuari",
+    "userPlaceholder": "El teu usuari",
+    "passwordLabel": "Contrasenya",
+    "loginButton": "Entrar",
+    "loggingIn": "Entrant...",
+    "incorrectData": "Les dades d'usuari o contrasenya són incorrectes.",
+    "loginError": "No s'ha pogut iniciar sessió. Intenta-ho més tard.",
+    "fillFields": "Si us plau, omple tots els camps.",
+    "backToHome": "Tornar a l'inici"
+  },
+  "dashboard": {
+    "title": "El meu Perfil",
+    "subtitle": "Benvingut al teu espai personal.",
+    "nameLabel": "Nom d'usuari",
+    "companyLabel": "Empresa",
+    "logoutButton": "Tancar Sessió"
   }
 }
