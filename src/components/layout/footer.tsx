@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Ship } from 'lucide-react';
+import Image from 'next/image';
 import type { Locale } from '@/lib/i18n-config';
 
 export function Footer({
@@ -16,7 +16,7 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4 md:col-span-1">
             <Link href={`/${lang}`} className="flex items-center gap-2 text-white">
-                <Ship className="h-8 w-8 text-primary" />
+                <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={32} height={32} />
                 <span className="text-xl font-bold font-headline">TransGlobal Solutions</span>
             </Link>
             <p className="text-sm max-w-xs">{dictionary.slogan}</p>

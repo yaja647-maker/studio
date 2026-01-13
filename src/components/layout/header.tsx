@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, Ship, LogIn } from 'lucide-react';
+import { Menu, LogIn } from 'lucide-react';
 
 import type { Locale } from '@/lib/i18n-config';
 import { cn } from '@/lib/utils';
@@ -50,7 +51,7 @@ export function Header({
     <header className="bg-card shadow-sm sticky top-0 z-40">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2">
-          <Ship className="h-8 w-8 text-primary" />
+          <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={40} height={40} className="h-8 w-auto md:h-10" />
           <span className="text-xl md:text-2xl font-bold font-headline">
              <span className="text-primary">TransGlobal</span> Solutions
           </span>
@@ -95,7 +96,7 @@ export function Header({
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Ship className="h-8 w-8 text-primary" />
+                  <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={40} height={40} className="h-8 w-auto" />
                   <span className="text-xl font-bold font-headline text-primary">TransGlobal</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
