@@ -44,7 +44,7 @@ export function Footer({
             <address className="not-italic text-sm space-y-1">
               <p>Carrer de la Logística, 123</p>
               <p>08039 Barcelona, Espanya</p>
-              <p className="pt-2">Email: <a href="mailto:contact@transglobalsolutions.com" className="hover:text-primary transition-colors">contact@transglobalsolutions.com</a></p>
+              <p className="pt-2">Email: <a href="mailto:contact@transportesjadiani.com" className="hover:text-primary transition-colors">contact@transportesjadiani.com</a></p>
               <p>Tel: <a href="tel:+34930123456" className="hover:text-primary transition-colors">+34 930 123 456</a></p>
             </address>
           </div>
