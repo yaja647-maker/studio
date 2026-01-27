@@ -26,7 +26,7 @@ const getDictionary = (lang: Locale) =>
 
 
 export default function TrackingPage({ params }: { params: { lang: Locale } }) {
-  const { lang } = params;
+  const lang = use(params).lang;
   const [trackingCode, setTrackingCode] = useState('');
   const [shipment, setShipment] = useState<Shipment | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -83,87 +83,89 @@ export default function TrackingPage({ params }: { params: { lang: Locale } }) {
   const progressProps = shipment ? getProgressProps(shipment.status) : null;
   
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
-      <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">{d.title}</h1>
-          <p className="mt-4 text-lg text-muted-foreground">{d.subtitle}</p>
-        </div>
-        
-        <div className="flex gap-2 mb-8">
-          <Input 
-            type="text"
-            value={trackingCode}
-            onChange={(e) => setTrackingCode(e.target.value)}
-            placeholder={d.inputPlaceholder}
-            className="flex-grow"
-            onKeyUp={(e) => e.key === 'Enter' && handleSearch()}
-          />
-          <Button onClick={handleSearch} disabled={isLoading}>
-            <Search className="mr-2" />
-            {isLoading ? d.searching : d.searchButton}
-          </Button>
-        </div>
+    <section className="w-full bg-accent min-h-[calc(100vh-13rem)]">
+      <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">{d.title}</h1>
+            <p className="mt-4 text-lg text-muted-foreground">{d.subtitle}</p>
+          </div>
+          
+          <div className="flex gap-2 mb-8">
+            <Input 
+              type="text"
+              value={trackingCode}
+              onChange={(e) => setTrackingCode(e.target.value)}
+              placeholder={d.inputPlaceholder}
+              className="flex-grow"
+              onKeyUp={(e) => e.key === 'Enter' && handleSearch()}
+            />
+            <Button onClick={handleSearch} disabled={isLoading}>
+              <Search className="mr-2" />
+              {isLoading ? d.searching : d.searchButton}
+            </Button>
+          </div>
 
-        {error && (
-            <Alert variant="destructive">
-                <AlertDescription>{error}</AlertDescription>
-            </Alert>
-        )}
+          {error && (
+              <Alert variant="destructive">
+                  <AlertDescription>{error}</AlertDescription>
+              </Alert>
+          )}
 
-        {shipment && (
-          <Card className="w-full animate-in fade-in-50">
-            <CardHeader>
-              <CardTitle className="flex items-center justify-between font-headline">
-                <span>{d.resultsTitle}: {shipment.tracking_code}</span>
-                <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${progressProps?.colorClass}`}>
-                  {progressProps?.label}
-                </span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div>
-                <Progress value={progressProps?.value} className={`[&>*]:bg-primary`} />
-                <div className="flex justify-between text-xs text-muted-foreground mt-2">
-                    <span>{d.statusWarehouse}</span>
-                    <span>{d.statusTransit}</span>
-                    <span>{d.statusDelivered}</span>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                <div className="flex items-start gap-3">
-                  <Package className="h-5 w-5 text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">{d.origin}</p>
-                    <p className="text-muted-foreground">{shipment.origin}</p>
+          {shipment && (
+            <Card className="w-full animate-in fade-in-50">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between font-headline">
+                  <span>{d.resultsTitle}: {shipment.tracking_code}</span>
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium text-white ${progressProps?.colorClass}`}>
+                    {progressProps?.label}
+                  </span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div>
+                  <Progress value={progressProps?.value} className={`[&>*]:bg-primary`} />
+                  <div className="flex justify-between text-xs text-muted-foreground mt-2">
+                      <span>{d.statusWarehouse}</span>
+                      <span>{d.statusTransit}</span>
+                      <span>{d.statusDelivered}</span>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Ship className="h-5 w-5 text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">{d.destination}</p>
-                    <p className="text-muted-foreground">{shipment.destination}</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                  <div className="flex items-start gap-3">
+                    <Package className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <p className="font-semibold">{d.origin}</p>
+                      <p className="text-muted-foreground">{shipment.origin}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Ship className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <p className="font-semibold">{d.destination}</p>
+                      <p className="text-muted-foreground">{shipment.destination}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Calendar className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <p className="font-semibold">{d.eta}</p>
+                      <p className="text-muted-foreground">{shipment.eta}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <p className="font-semibold">{d.currentLocation}</p>
+                      <p className="text-muted-foreground">{shipment.location}</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <Calendar className="h-5 w-5 text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">{d.eta}</p>
-                    <p className="text-muted-foreground">{shipment.eta}</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary mt-1" />
-                  <div>
-                    <p className="font-semibold">{d.currentLocation}</p>
-                    <p className="text-muted-foreground">{shipment.location}</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+              </CardContent>
+            </Card>
+          )}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

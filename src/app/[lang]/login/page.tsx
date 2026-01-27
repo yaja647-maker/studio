@@ -22,7 +22,7 @@ const getDictionary = (lang: Locale) =>
   import(`@/dictionaries/${lang}.json`).then(module => module.default);
 
 export default function LoginPage({ params }: { params: { lang: Locale } }) {
-  const { lang } = params;
+  const lang = use(params).lang;
   const [usuari, setUsuari] = useState('');
   const [contrasenya, setContrasenya] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -71,7 +71,7 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
   const d = dictionary.login;
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background p-4">
+    <div className="flex items-center justify-center min-h-[calc(100vh-13rem)] bg-accent p-4">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle className="text-2xl font-headline">{d.title}</CardTitle>

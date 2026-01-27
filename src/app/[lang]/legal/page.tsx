@@ -6,11 +6,13 @@ export default async function LegalPage({ params: { lang } }: { params: { lang: 
   const d = dictionary.legal;
 
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-16">
-      <div className="prose max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">{d.legalTitle}</h1>
-        <p className="mt-6 text-lg text-muted-foreground">{d.content}</p>
+    <section className="w-full bg-accent py-12 md:py-16 min-h-[calc(100vh-13rem)]">
+      <div className="container mx-auto px-4">
+        <div className="prose max-w-4xl mx-auto bg-card p-8 rounded-lg shadow">
+          <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">{d.legalTitle}</h1>
+          <p className="mt-6 text-lg text-muted-foreground">{d.content}</p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
