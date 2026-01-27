@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -25,7 +25,8 @@ const getDictionary = (lang: Locale) =>
   import(`@/dictionaries/${lang}.json`).then(module => module.default);
 
 
-export default function TrackingPage({ params: { lang } }: { params: { lang: Locale } }) {
+export default function TrackingPage({ params }: { params: { lang: Locale } }) {
+  const { lang } = params;
   const [trackingCode, setTrackingCode] = useState('');
   const [shipment, setShipment] = useState<Shipment | null>(null);
   const [error, setError] = useState<string | null>(null);

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -11,7 +11,8 @@ import { type Locale } from '@/lib/i18n-config';
 const getDictionary = (lang: Locale) =>
   import(`@/dictionaries/${lang}.json`).then(module => module.default);
 
-export default function DashboardPage({ params: { lang } }: { params: { lang: Locale } }) {
+export default function DashboardPage({ params }: { params: { lang: Locale } }) {
+  const { lang } = params;
   const [user, setUser] = useState<{ nom: string; empresa: string } | null>(null);
   const [dictionary, setDictionary] = useState<any>(null);
   const router = useRouter();

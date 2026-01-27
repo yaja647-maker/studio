@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -21,7 +21,8 @@ const API_URL = 'https://sheetdb.io/api/v1/b3co8gke4ph6w';
 const getDictionary = (lang: Locale) =>
   import(`@/dictionaries/${lang}.json`).then(module => module.default);
 
-export default function LoginPage({ params: { lang } }: { params: { lang: Locale } }) {
+export default function LoginPage({ params }: { params: { lang: Locale } }) {
+  const { lang } = params;
   const [usuari, setUsuari] = useState('');
   const [contrasenya, setContrasenya] = useState('');
   const [error, setError] = useState<string | null>(null);
