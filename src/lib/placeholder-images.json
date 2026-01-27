@@ -2,33 +2,33 @@
   "placeholderImages": [
     {
       "id": "hero-logistics",
-      "description": "A grayscale photo of a truck on a highway, representing logistics and transport.",
-      "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb1684878?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtb25vY2hyb21lfGVufDB8fHx8MTc2NTM4OTAwN3ww&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "logistics monochrome"
+      "description": "A truck on a road with green foliage in the background, representing green logistics.",
+      "imageUrl": "https://images.unsplash.com/photo-1624479345086-34869a83495d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3NjU0MDEyMzR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "green logistics"
     },
     {
       "id": "service-sea-freight",
-      "description": "A grayscale image of a large container ship at a port.",
-      "imageUrl": "https://images.unsplash.com/photo-1611252391218-4228694024c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb250YWluZXIlMjBzaGlwJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkxMjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "container ship monochrome"
+      "description": "A large container ship with many green containers stacked on its deck.",
+      "imageUrl": "https://images.unsplash.com/photo-1599846764536-538a7a2a537f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb250YWluZXIlMjBzaGlwJTIwZ3JlZW58ZW5wwHx8fHwxNzY1NDAxMzU0fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "container ship green"
     },
     {
       "id": "service-air-freight",
-      "description": "A grayscale photo of the tail and wing of a cargo airplane.",
-      "imageUrl": "https://images.unsplash.com/photo-1543301273-b6b3b5545a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHBsYW5lJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkyMDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "cargo plane monochrome"
+      "description": "A cargo airplane flying over lush green fields and landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1570751049110-540478b39486?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHBsYW5lJTIwZ3JlZW58ZW5wwHx8fHwxNzY1NDAxNDIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "cargo plane green"
     },
     {
       "id": "service-warehousing",
-      "description": "A grayscale image of the interior of a warehouse with shelves.",
-      "imageUrl": "https://images.unsplash.com/photo-1586528116311-06924219dec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBtb25vY2hyb21lfGVufDB8fHx8MTc2NTM4OTI1Nnww&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "warehouse monochrome"
+      "description": "The interior of a warehouse with a green forklift moving pallets.",
+      "imageUrl": "https://images.unsplash.com/photo-1664288342211-133939023438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBncmVlbnxlbnwwfHx8fDE3NjU0MDE0NzV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "warehouse green"
     },
     {
       "id": "about-us-team",
-      "description": "A grayscale photo of a business team having a discussion in an office.",
-      "imageUrl": "https://images.unsplash.com/photo-1560264453-34a04e156a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkzMjB8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "business team monochrome"
+      "description": "A business team having a discussion in a modern office with indoor plants.",
+      "imageUrl": "https://images.unsplash.com/photo-1521737852583-3d339b341029?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBtZWV0aW5nJTIwcGxhbnRzfGVufDB8fHx8MTc2NTQwMTUyN3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "office meeting"
     }
   ]
 }
