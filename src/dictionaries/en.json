@@ -69,7 +69,36 @@
   },
   "blog": {
     "title": "Blog & Tools",
-    "subtitle": "Stay up to date with the latest industry news and use our tools to optimize your operations."
+    "subtitle": "Stay up to date with the latest industry news and use our tools to optimize your operations.",
+    "posts": [
+      {
+        "id": "1",
+        "imageId": "blog-green-logistics",
+        "title": "The Green Revolution in Logistics",
+        "excerpt": "Discover how sustainability is transforming the supply chain and why it's crucial for the future of the planet and your business.",
+        "date": "July 15, 2024",
+        "author": "By The TRANSPORTESJADIANI Team",
+        "cta": "Read More"
+      },
+      {
+        "id": "2",
+        "imageId": "blog-warehouse-automation",
+        "title": "Warehouse Automation: The Future is Now",
+        "excerpt": "We explore the latest technologies in warehouse automation, from autonomous robots to intelligent management systems.",
+        "date": "July 5, 2024",
+        "author": "By The TRANSPORTESJADIANI Team",
+        "cta": "Read More"
+      },
+      {
+        "id": "3",
+        "imageId": "blog-international-shipping",
+        "title": "5 Tips for Efficient International Shipping",
+        "excerpt": "Optimizing your international shipments can be complex. Here are five key tips to save time and money.",
+        "date": "June 28, 2024",
+        "author": "By The TRANSPORTESJADIANI Team",
+        "cta": "Read More"
+      }
+    ]
   },
   "imageEnhancer": {
     "title": "AI Logistics Image Enhancer",

@@ -29,6 +29,24 @@
       "description": "A business team having a discussion in a modern office with indoor plants.",
       "imageUrl": "https://images.unsplash.com/photo-1521737852583-3d339b341029?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBtZWV0aW5nJTIwcGxhbnRzfGVufDB8fHx8MTc2NTQwMTUyN3ww&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "office meeting"
+    },
+    {
+      "id": "blog-green-logistics",
+      "description": "A winding road through a lush green forest, symbolizing sustainable transport routes.",
+      "imageUrl": "https://images.unsplash.com/photo-1505832049374-cfcf7013e147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncmVlbiUyMHJvYWR8ZW58MHx8fHwxNzY1NzE0NzU4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "green road"
+    },
+    {
+      "id": "blog-warehouse-automation",
+      "description": "An automated robotic arm sorting packages in a modern warehouse.",
+      "imageUrl": "https://images.unsplash.com/photo-1678954332354-f5a65a282270?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjByb2JvdHxlbnwwfHx8fDE3NjU3MTQ4MTN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "warehouse robot"
+    },
+    {
+      "id": "blog-international-shipping",
+      "description": "A world map with glowing lines connecting different continents, representing global trade routes.",
+      "imageUrl": "https://images.unsplash.com/photo-1563813950130-9a6279c6518a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHdsb2JhbCUyMGxvZ2lzdGljcyUyMG1hcHxlbnwwfHx8fDE3NjU3MTQ4ODF8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "global logistics"
     }
   ]
 }

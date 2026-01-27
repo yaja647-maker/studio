@@ -69,7 +69,36 @@
   },
   "blog": {
     "title": "Blog et Outils",
-    "subtitle": "Restez informé des dernières actualités du secteur et utilisez nos outils pour optimiser vos opérations."
+    "subtitle": "Restez informé des dernières actualités du secteur et utilisez nos outils pour optimiser vos opérations.",
+    "posts": [
+      {
+        "id": "1",
+        "imageId": "blog-green-logistics",
+        "title": "La Révolution Verte dans la Logistique",
+        "excerpt": "Découvrez comment la durabilité transforme la chaîne d'approvisionnement et pourquoi elle est cruciale pour l'avenir de la planète et de votre entreprise.",
+        "date": "15 Juillet 2024",
+        "author": "Par L'équipe TRANSPORTESJADIANI",
+        "cta": "Lire la Suite"
+      },
+      {
+        "id": "2",
+        "imageId": "blog-warehouse-automation",
+        "title": "Automatisation des Entrepôts : Le Futur, c'est Maintenant",
+        "excerpt": "Nous explorons les dernières technologies en matière d'automatisation d'entrepôt, des robots autonomes aux systèmes de gestion intelligents.",
+        "date": "5 Juillet 2024",
+        "author": "Par L'équipe TRANSPORTESJADIANI",
+        "cta": "Lire la Suite"
+      },
+      {
+        "id": "3",
+        "imageId": "blog-international-shipping",
+        "title": "5 Astuces pour des Expéditions Internationales Efficaces",
+        "excerpt": "L'optimisation de vos expéditions internationales peut être complexe. Voici cinq conseils clés pour économiser du temps et de l'argent.",
+        "date": "28 Juin 2024",
+        "author": "Par L'équipe TRANSPORTESJADIANI",
+        "cta": "Lire la Suite"
+      }
+    ]
   },
   "imageEnhancer": {
     "title": "Améliorateur d'Images Logistiques par IA",

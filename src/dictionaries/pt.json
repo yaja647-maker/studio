@@ -69,7 +69,36 @@
   },
   "blog": {
     "title": "Blog e Ferramentas",
-    "subtitle": "Mantenha-se atualizado com as últimas notícias do setor e use nossas ferramentas para otimizar suas operações."
+    "subtitle": "Mantenha-se atualizado com as últimas notícias do setor e use nossas ferramentas para otimizar suas operações.",
+    "posts": [
+      {
+        "id": "1",
+        "imageId": "blog-green-logistics",
+        "title": "A Revolução Verde na Logística",
+        "excerpt": "Descubra como a sustentabilidade está a transformar a cadeia de abastecimento e por que é crucial para o futuro do planeta e do seu negócio.",
+        "date": "15 de Julho, 2024",
+        "author": "Pela Equipe TRANSPORTESJADIANI",
+        "cta": "Leia Mais"
+      },
+      {
+        "id": "2",
+        "imageId": "blog-warehouse-automation",
+        "title": "Automação de Armazéns: O Futuro é Agora",
+        "excerpt": "Exploramos as mais recentes tecnologias em automação de armazéns, desde robôs autônomos a sistemas de gestão inteligentes.",
+        "date": "5 de Julho, 2024",
+        "author": "Pela Equipe TRANSPORTESJADIANI",
+        "cta": "Leia Mais"
+      },
+      {
+        "id": "3",
+        "imageId": "blog-international-shipping",
+        "title": "5 Dicas para Envios Internacionais Eficientes",
+        "excerpt": "Otimizar as suas remessas internacionais pode ser complexo. Aqui estão cinco dicas essenciais para poupar tempo e dinheiro.",
+        "date": "28 de Junho, 2024",
+        "author": "Pela Equipe TRANSPORTESJADIANI",
+        "cta": "Leia Mais"
+      }
+    ]
   },
   "imageEnhancer": {
     "title": "Melhorador de Imagens de Logística com IA",
