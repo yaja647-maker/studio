@@ -2,33 +2,33 @@
   "placeholderImages": [
     {
       "id": "hero-logistics",
-      "description": "A wide shot of a busy port with cranes and container ships.",
-      "imageUrl": "https://images.unsplash.com/photo-1712578582985-430e34bc6c7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0JTIwY29udGFpbmVyJTIwc2hpcHxlbnwwfHx8fDE3NjQ3ODg2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "port container ship"
+      "description": "A grayscale photo of a truck on a highway, representing logistics and transport.",
+      "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb1684878?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBtb25vY2hyb21lfGVufDB8fHx8MTc2NTM4OTAwN3ww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "logistics monochrome"
     },
     {
       "id": "service-sea-freight",
-      "description": "Container ship sailing on the open ocean.",
-      "imageUrl": "https://images.unsplash.com/photo-1689252688962-b5c03f6c9144?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb250YWluZXIlMjBzaGlwJTIwb2NlYW58ZW58MHx8fHwxNzY0Nzg4NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "container ship ocean"
+      "description": "A grayscale image of a large container ship at a port.",
+      "imageUrl": "https://images.unsplash.com/photo-1611252391218-4228694024c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb250YWluZXIlMjBzaGlwJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkxMjN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "container ship monochrome"
     },
     {
       "id": "service-air-freight",
-      "description": "A cargo plane being loaded with containers at an airport tarmac.",
-      "imageUrl": "https://images.unsplash.com/photo-1740499129855-c68d516b4a4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FyZ28lMjBwbGFuZSUyMGFpcnBvcnR8ZW58MHx8fHwxNzY0Nzg4NjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cargo plane airport"
+      "description": "A grayscale photo of the tail and wing of a cargo airplane.",
+      "imageUrl": "https://images.unsplash.com/photo-1543301273-b6b3b5545a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHBsYW5lJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkyMDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "cargo plane monochrome"
     },
     {
       "id": "service-warehousing",
-      "description": "Interior of a large, modern warehouse with tall shelves and a forklift.",
-      "imageUrl": "https://images.unsplash.com/photo-1645736315000-6f788915923b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3YXJlaG91c2UlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzY0Nzc2MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "warehouse logistics"
+      "description": "A grayscale image of the interior of a warehouse with shelves.",
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-06924219dec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBtb25vY2hyb21lfGVufDB8fHx8MTc2NTM4OTI1Nnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "warehouse monochrome"
     },
     {
       "id": "about-us-team",
-      "description": "A diverse team of professionals in a modern office, looking at a logistics plan.",
-      "imageUrl": "https://images.unsplash.com/photo-1709715357549-f2d587846ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nfGVufDB8fHx8MTc2NDc4ODY4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business team meeting"
+      "description": "A grayscale photo of a business team having a discussion in an office.",
+      "imageUrl": "https://images.unsplash.com/photo-1560264453-34a04e156a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHRlYW0lMjBtZWV0aW5nJTIwbW9ub2Nocm9tZXxlbnwwfHx8fDE3NjUzODkzMjB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "business team monochrome"
     }
   ]
 }
