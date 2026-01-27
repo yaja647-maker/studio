@@ -51,9 +51,9 @@ export function Header({
     <header className="bg-card shadow-sm sticky top-0 z-40">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2">
-          <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={40} height={40} className="h-8 w-auto md:h-10" />
+          <Image src="/logo.png" alt="TRANSPORTESJADIANI Logo" width={40} height={40} className="h-8 w-auto md:h-10" />
           <span className="text-xl md:text-2xl font-bold font-headline">
-             <span className="text-primary">TransGlobal</span> Solutions
+             TRANSPORTESJADIANI
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
@@ -96,8 +96,8 @@ export function Header({
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={40} height={40} className="h-8 w-auto" />
-                  <span className="text-xl font-bold font-headline text-primary">TransGlobal</span>
+                  <Image src="/logo.png" alt="TRANSPORTESJADIANI Logo" width={40} height={40} className="h-8 w-auto" />
+                  <span className="text-xl font-bold font-headline">TRANSPORTESJADIANI</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navItems.map(item => (

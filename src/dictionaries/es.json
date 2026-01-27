@@ -1,3 +1,4 @@
+
 {
   "navigation": {
     "home": "Inicio",
@@ -44,7 +45,7 @@
   "about": {
     "title": "Nuestra Misión",
     "subtitle": "Impulsando el comercio global con soluciones logísticas innovadoras y un compromiso inquebrantable con nuestros clientes.",
-    "p1": "Fundada en 2010 en Barcelona, TransGlobal Solutions nació con el objetivo de simplificar la complejidad de la logística internacional. Nuestro equipo, formado por expertos en comercio exterior, transporte y tecnología, trabaja para ofrecer un servicio transparente, eficiente y personalizado.",
+    "p1": "Fundada en 2010 en Barcelona, TRANSPORTESJADIANI nació con el objetivo de simplificar la complejidad de la logística internacional. Nuestro equipo, formado por expertos en comercio exterior, transporte y tecnología, trabaja para ofrecer un servicio transparente, eficiente y personalizado.",
     "p2": "Creemos en la tecnología como pilar fundamental. Por ello, invertimos constantemente en sistemas de seguimiento en tiempo real, plataformas de gestión intuitivas y soluciones de automatización que aportan valor real a la cadena de suministro de nuestros socios. Nuestra misión es ser más que un proveedor; aspiramos a ser tu aliado estratégico en logística."
   },
   "contact": {
@@ -103,7 +104,7 @@
     "legalTitle": "Aviso Legal",
     "privacyTitle": "Política de Privacidad",
     "cookiesTitle": "Política de Cookies",
-    "content": "Esta es una página de muestra. El contenido legal completo debe ser redactado por un profesional. Este texto sirve como marcador de posición para demostrar la estructura de la página. TransGlobal Solutions (nombre ficticio) se presenta como una empresa de servicios logísticos. Toda la información, imágenes y datos técnicos son simulados con fines educativos en el marco de un proyecto de Firebase Studio."
+    "content": "Esta es una página de muestra. El contenido legal completo debe ser redactado por un profesional. Este texto sirve como marcador de posición para demostrar la estructura de la página. TRANSPORTESJADIANI (nombre ficticio) se presenta como una empresa de servicios logísticos. Toda la información, imágenes y datos técnicos son simulados con fines educativos en el marco de un proyecto de Firebase Studio."
   },
   "tracking": {
     "title": "Localiza tu envío",

@@ -1,3 +1,4 @@
+
 {
   "navigation": {
     "home": "Inici",
@@ -44,7 +45,7 @@
   "about": {
     "title": "La Nostra Missió",
     "subtitle": "Impulsant el comerç global amb solucions logístiques innovadores i un compromís indestructible amb els nostres clients.",
-    "p1": "Fundada el 2010 a Barcelona, TransGlobal Solutions va néixer amb l'objectiu de simplificar la complexitat de la logística internacional. El nostre equip, format per experts en comerç exterior, transport i tecnologia, treballa per oferir un servei transparent, eficient i personalitzat.",
+    "p1": "Fundada el 2010 a Barcelona, TRANSPORTESJADIANI va néixer amb l'objectiu de simplificar la complexitat de la logística internacional. El nostre equip, format per experts en comerç exterior, transport i tecnologia, treballa per oferir un servei transparent, eficient i personalitzat.",
     "p2": "Creiem en la tecnologia com a pilar fonamental. Per això, invertim constantment en sistemes de seguiment en temps real, plataformes de gestió intuïtives i solucions d'automatització que aporten valor real a la cadena de subministrament dels nostres socis. La nostra missió és ser més que un proveïdor; aspirem a ser el teu aliat estratègic en logística."
   },
   "contact": {
@@ -103,7 +104,7 @@
     "legalTitle": "Avís Legal",
     "privacyTitle": "Política de Privacitat",
     "cookiesTitle": "Política de Cookies",
-    "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TransGlobal Solutions (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
+    "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TRANSPORTESJADIANI (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
   },
   "tracking": {
     "title": "Localitza el teu enviament",

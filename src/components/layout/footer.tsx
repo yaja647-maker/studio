@@ -16,8 +16,8 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4 md:col-span-1">
             <Link href={`/${lang}`} className="flex items-center gap-2 text-white">
-                <Image src="/logo.png" alt="TransGlobal Solutions Logo" width={32} height={32} />
-                <span className="text-xl font-bold font-headline">TransGlobal Solutions</span>
+                <Image src="/logo.png" alt="TRANSPORTESJADIANI Logo" width={32} height={32} />
+                <span className="text-xl font-bold font-headline">TRANSPORTESJADIANI</span>
             </Link>
             <p className="text-sm max-w-xs">{dictionary.slogan}</p>
           </div>
@@ -50,7 +50,7 @@ export function Footer({
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
-          <p>&copy; {currentYear} TransGlobal Solutions. {dictionary.rightsReserved}</p>
+          <p>&copy; {currentYear} TRANSPORTESJADIANI. {dictionary.rightsReserved}</p>
         </div>
       </div>
     </footer>

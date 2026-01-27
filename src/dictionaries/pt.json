@@ -1,3 +1,4 @@
+
 {
   "navigation": {
     "home": "Início",
@@ -44,7 +45,7 @@
   "about": {
     "title": "Nossa Missão",
     "subtitle": "Impulsionando o comércio global com soluções logísticas inovadoras e um compromisso inabalável com nossos clientes.",
-    "p1": "Fundada em 2010 em Barcelona, a TransGlobal Solutions nasceu com o objetivo de simplificar a complexidade da logística internacional. Nossa equipe, formada por especialistas em comércio exterior, transporte e tecnologia, trabalha para oferecer um serviço transparente, eficiente e personalizado.",
+    "p1": "Fundada em 2010 em Barcelona, a TRANSPORTESJADIANI nasceu com o objetivo de simplificar a complexidade da logística internacional. Nossa equipe, formada por especialistas em comércio exterior, transporte e tecnologia, trabalha para oferecer um serviço transparente, eficiente e personalizado.",
     "p2": "Acreditamos na tecnologia como pilar fundamental. Por isso, investimos constantemente em sistemas de rastreamento em tempo real, plataformas de gestão intuitivas e soluções de automação que agregam valor real à cadeia de suprimentos de nossos parceiros. Nossa missão é ser mais do que um fornecedor; aspiramos ser seu aliado estratégico em logística."
   },
   "contact": {
@@ -103,25 +104,7 @@
     "legalTitle": "Aviso Legal",
     "privacyTitle": "Política de Privacidade",
     "cookiesTitle": "Política de Cookies",
-    "content": "Esta é uma página de amostra. O conteúdo legal completo deve ser redigido por um profissional. Este texto serve como um marcador de posição para demonstrar a estrutura da página. A TransGlobal Solutions (nome fictício) é apresentada como uma empresa de serviços de logística. Todas as informações, imagens e dados técnicos são simulados para fins educacionais no âmbito de um projeto do Firebase Studio."
-  },
-  "tracking": {
-    "title": "Rastreie sua remessa",
-    "subtitle": "Digite seu código de rastreamento para ver o status atual da sua remessa.",
-    "inputPlaceholder": "Ex: TGS123456789",
-    "searchButton": "Buscar",
-    "searching": "Buscando...",
-    "notFound": "Código de remessa não encontrado. Verifique e tente novamente.",
-    "fetchError": "Não foi possível realizar a busca. Tente novamente mais tarde.",
-    "resultsTitle": "Resultados da Remessa",
-    "origin": "Origem",
-    "destination": "Destino",
-    "eta": "Data de entrega estimada (ETA)",
-    "currentLocation": "Localização Atual",
-    "statusWarehouse": "Em armazém",
-    "statusTransit": "Em trânsito",
-    "statusDelivered": "Entregue",
-    "statusUnknown": "Desconhecido"
+    "content": "Esta é uma página de amostra. O conteúdo legal completo deve ser redigido por um profissional. Este texto serve como um marcador de posição para demonstrar a estrutura da página. A TRANSPORTESJADIANI (nome fictício) é apresentada como uma empresa de serviços de logística. Todas as informações, imagens e dados técnicos são simulados para fins educacionais no âmbito de um projeto do Firebase Studio."
   },
     "login": {
     "title": "Acesso de Usuário",

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'TransGlobal Solutions',
-  description: 'Solucions logístiques globals per a un món connectat.',
+  title: 'TRANSPORTESJADIANI',
+  description: 'TRANSPORTESJADIANI - Solucions logístiques per a un món connectat.',
 };
 
 export default function RootLayout({
