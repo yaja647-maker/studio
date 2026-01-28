@@ -3,24 +3,20 @@ import Image from 'next/image';
 import { getDictionary } from '@/lib/get-dictionary';
 import { type Locale } from '@/lib/i18n-config';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-logistics');
 
   return (
     <section className="relative h-[calc(100vh-5rem)] w-full">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-          priority
-        />
-      )}
+      <Image
+        src="/unnamed.png"
+        alt="TRANSPORTESJADIANI"
+        fill
+        className="object-cover"
+        data-ai-hint="logistics transport"
+        priority
+      />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
