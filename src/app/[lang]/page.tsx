@@ -10,7 +10,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   return (
     <section className="relative h-[calc(100vh-5rem)] w-full">
       <Image
-        src="/images/unnamed.png"
+        src="/unnamed.png"
         alt="TRANSPORTESJADIANI"
         fill
         className="object-cover"
