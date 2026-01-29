@@ -16,7 +16,7 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4 md:col-span-1">
             <Link href={`/${lang}`} className="flex items-center gap-2 text-white">
-                <Image src="/logo.png" alt="TRANSPORTESJADIANI Logo" width={150} height={32} className="h-8 w-auto" />
+                <Image src="/logo.png" alt="TRANSPORTESJADIANI Logo" width={180} height={40} className="h-10 w-auto" />
             </Link>
             <p className="text-sm max-w-xs">{dictionary.slogan}</p>
           </div>
