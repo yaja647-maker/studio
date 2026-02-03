@@ -53,10 +53,7 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
     try {
       const response = await fetch(`${API_URL}/search?sheet=usuaris&usuari=${encodeURIComponent(usuari)}&contrasenya=${encodeURIComponent(contrasenya)}`);
       
-      if (!response.ok) {
-        console.error('Login API request failed:', response.status, response.statusText);
-        setError(dictionary.login.loginError);
-      } else {
+      if (response.ok) {
         const data: User[] = await response.json();
 
         if (data.length > 0) {
@@ -65,6 +62,13 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
           router.push(`/${lang}/dashboard`);
         } else {
           setError(dictionary.login.incorrectData);
+        }
+      } else {
+        if (response.status === 404) {
+            setError(dictionary.login.incorrectData);
+        } else {
+            console.error('Login API request failed:', response.status, response.statusText);
+            setError(dictionary.login.loginError);
         }
       }
     } catch (e) {
