@@ -135,7 +135,25 @@
     "cookiesTitle": "Política de Cookies",
     "content": "Esta é uma página de amostra. O conteúdo legal completo deve ser redigido por um profissional. Este texto serve como um marcador de posição para demonstrar a estrutura da página. A TRANSPORTESJADIANI (nome fictício) é apresentada como uma empresa de serviços de logística. Todas as informações, imagens e dados técnicos são simulados para fins educacionais no âmbito de um projeto do Firebase Studio."
   },
-    "login": {
+  "tracking": {
+    "title": "Rastreie sua remessa",
+    "subtitle": "Insira seu código de rastreamento para ver o status atual de sua remessa.",
+    "inputPlaceholder": "Ex: TGS123456789",
+    "searchButton": "Buscar",
+    "searching": "Buscando...",
+    "notFound": "Código de remessa não encontrado. Verifique e tente novamente.",
+    "fetchError": "Não foi possível realizar a busca. Tente novamente mais tarde.",
+    "resultsTitle": "Resultados da Remessa",
+    "origin": "Origem",
+    "destination": "Destino",
+    "eta": "Data de entrega prevista (ETA)",
+    "currentLocation": "Localização Atual",
+    "statusWarehouse": "Em armazém",
+    "statusTransit": "Em trânsito",
+    "statusDelivered": "Entregue",
+    "statusUnknown": "Desconhecido"
+  },
+  "login": {
     "title": "Acesso de Usuário",
     "subtitle": "Digite suas credenciais para acessar seu painel.",
     "userLabel": "Usuário",
