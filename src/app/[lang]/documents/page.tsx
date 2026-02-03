@@ -23,6 +23,7 @@ type UserData = {
 };
 
 type DocumentLine = {
+  id: string;
   num_factura: string;
   data: string;
   usuari: string;
