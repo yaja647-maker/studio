@@ -39,6 +39,11 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
     setIsLoading(true);
     setError(null);
 
+    if (!dictionary) {
+      setIsLoading(false);
+      return;
+    }
+
     if (!usuari || !contrasenya) {
       setError(dictionary.login.fillFields);
       setIsLoading(false);
@@ -47,20 +52,23 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
 
     try {
       const response = await fetch(`${API_URL}/search?sheet=usuaris&usuari=${encodeURIComponent(usuari)}&contrasenya=${encodeURIComponent(contrasenya)}`);
+      
       if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data: User[] = await response.json();
-
-      if (data.length > 0) {
-        const user = data[0];
-        localStorage.setItem('user', JSON.stringify({ nom: user.nom, empresa: user.empresa }));
-        router.push(`/${lang}/dashboard`);
+        console.error('Login API request failed:', response.status, response.statusText);
+        setError(dictionary.login.loginError);
       } else {
-        setError(dictionary.login.incorrectData);
+        const data: User[] = await response.json();
+
+        if (data.length > 0) {
+          const user = data[0];
+          localStorage.setItem('user', JSON.stringify({ nom: user.nom, empresa: user.empresa }));
+          router.push(`/${lang}/dashboard`);
+        } else {
+          setError(dictionary.login.incorrectData);
+        }
       }
     } catch (e) {
-      console.error(e);
+      console.error('An error occurred during login:', e);
       setError(dictionary.login.loginError);
     } finally {
       setIsLoading(false);
