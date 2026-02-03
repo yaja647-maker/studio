@@ -13,7 +13,7 @@ const getDictionary = (lang: Locale) =>
 
 export default function DashboardPage({ params }: { params: { lang: Locale } }) {
   const lang = use(params).lang;
-  const [user, setUser] = useState<{ nom: string; empresa: string } | null>(null);
+  const [user, setUser] = useState<{ usuari: string; nom: string; empresa: string } | null>(null);
   const [dictionary, setDictionary] = useState<any>(null);
   const router = useRouter();
 

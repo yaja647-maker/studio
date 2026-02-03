@@ -58,7 +58,7 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
 
         if (data.length > 0) {
           const user = data[0];
-          localStorage.setItem('user', JSON.stringify({ nom: user.nom, empresa: user.empresa }));
+          localStorage.setItem('user', JSON.stringify({ usuari: user.usuari, nom: user.nom, empresa: user.empresa }));
           router.push(`/${lang}/dashboard`);
         } else {
           setError(dictionary.login.incorrectData);

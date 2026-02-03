@@ -55,7 +55,7 @@ const API_URL = 'https://sheetdb.io/api/v1/b3co8gke4ph6w';
 export default function DocumentsPage({ params }: { params: { lang: Locale } }) {
   const lang = use(params).lang;
   const [dictionary, setDictionary] = useState<any>(null);
-  const [currentUser, setCurrentUser] = useState<{ nom: string; empresa: string } | null>(null);
+  const [currentUser, setCurrentUser] = useState<{ nom: string; usuari: string; empresa: string } | null>(null);
   const [userRole, setUserRole] = useState<string | null>(null);
   const [invoices, setInvoices] = useState<Map<string, AggregatedInvoice>>(new Map());
   const [selectedInvoice, setSelectedInvoice] = useState<AggregatedInvoice | null>(null);
@@ -95,7 +95,7 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
         const usersData: UserData[] = await usersRes.json();
         const documentsData: DocumentLine[] = await documentsRes.json();
 
-        const currentUserData = usersData.find(u => u.usuari === currentUser.nom);
+        const currentUserData = usersData.find(u => u.usuari === currentUser.usuari);
         const role = currentUserData?.rol.toLowerCase() ?? 'client';
         setUserRole(role);
 
@@ -103,7 +103,7 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
         
         const filteredDocuments = isAdmin 
           ? documentsData 
-          : documentsData.filter(d => d.usuari === currentUser.nom);
+          : documentsData.filter(d => d.usuari === currentUser.usuari);
         
         processInvoices(filteredDocuments, usersData);
 
