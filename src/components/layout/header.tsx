@@ -27,17 +27,15 @@ export function Header({
 }) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activePath, setActivePath] = useState(pathname);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setActivePath(pathname);
-    // Check localStorage only on client side
-    if (typeof window !== 'undefined') {
-      const user = localStorage.getItem('user');
-      setIsLoggedIn(!!user);
-    }
-  }, [pathname]);
+    // After component mounts on client, set isClient to true and check auth state
+    setIsClient(true);
+    const user = localStorage.getItem('user');
+    setIsLoggedIn(!!user);
+  }, [pathname]); // Re-run on path change for SPA navigation
 
   const navItems: NavItem[] = [
     { href: `/${lang}`, label: dictionary.home },
@@ -49,7 +47,7 @@ export function Header({
     { href: `/${lang}/documents`, label: dictionary.documents, authRequired: true },
   ];
 
-  const visibleNavItems = navItems.filter(item => !item.authRequired || isLoggedIn);
+  const visibleNavItems = navItems.filter(item => !item.authRequired || (isClient && isLoggedIn));
 
   return (
     <header className="bg-card shadow-sm sticky top-0 z-40 print:hidden">
@@ -64,7 +62,7 @@ export function Header({
               href={item.href}
               className={cn(
                 'text-sm font-medium transition-colors hover:text-primary',
-                activePath.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (activePath === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
+                pathname.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (pathname === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
               )}
             >
               {item.label}
@@ -72,16 +70,23 @@ export function Header({
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-4">
-           {isLoggedIn ? (
-             <Button asChild>
-                <Link href={`/${lang}/dashboard`}>{dictionary.dashboard}</Link>
-             </Button>
+           {isClient ? (
+             isLoggedIn ? (
+               <Button asChild>
+                  <Link href={`/${lang}/dashboard`}>{dictionary.dashboard}</Link>
+               </Button>
+             ) : (
+               <Button asChild variant="outline">
+                  <Link href={`/${lang}/login`}>
+                    <LogIn className="mr-2 h-4 w-4" />
+                    {dictionary.login}
+                  </Link>
+               </Button>
+             )
            ) : (
-             <Button asChild variant="outline">
-                <Link href={`/${lang}/login`}>
-                  <LogIn className="mr-2 h-4 w-4" />
-                  {dictionary.login}
-                </Link>
+             <Button variant="outline" disabled>
+                <LogIn className="mr-2 h-4 w-4" />
+                {dictionary.login}
              </Button>
            )}
            <LanguageSwitcher />
@@ -106,7 +111,7 @@ export function Header({
                       href={item.href}
                       className={cn(
                         'text-lg font-medium transition-colors hover:text-primary',
-                         activePath.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (activePath === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
+                         pathname.startsWith(item.href) && item.href !== `/${lang}` ? 'text-primary' : (pathname === `/${lang}` && item.href === `/${lang}`) ? 'text-primary' : 'text-foreground'
                       )}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -115,15 +120,19 @@ export function Header({
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
-                    {isLoggedIn ? (
-                       <Button asChild>
-                          <Link href={`/${lang}/dashboard`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.dashboard}</Link>
-                       </Button>
-                     ) : (
-                       <Button asChild>
-                          <Link href={`/${lang}/login`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.login}</Link>
-                       </Button>
-                     )}
+                    {isClient ? (
+                       isLoggedIn ? (
+                         <Button asChild>
+                            <Link href={`/${lang}/dashboard`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.dashboard}</Link>
+                         </Button>
+                       ) : (
+                         <Button asChild>
+                            <Link href={`/${lang}/login`} onClick={() => setIsMobileMenuOpen(false)}>{dictionary.login}</Link>
+                         </Button>
+                       )
+                    ): (
+                      <Button disabled>{dictionary.login}</Button>
+                    )}
                     <LanguageSwitcher />
                 </div>
               </div>
