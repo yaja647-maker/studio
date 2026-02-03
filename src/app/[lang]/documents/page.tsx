@@ -121,7 +121,7 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
   const processInvoices = (documents: DocumentLine[], users: UserData[]) => {
     const groupedInvoices = new Map<string, DocumentLine[]>();
     for (const doc of documents) {
-      if (!doc.num_factura) continue;
+      if (!doc.num_factura || doc.num_factura.trim() === '') continue;
       const group = groupedInvoices.get(doc.num_factura) ?? [];
       group.push(doc);
       groupedInvoices.set(doc.num_factura, group);
@@ -130,8 +130,18 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
     const aggregated = new Map<string, AggregatedInvoice>();
     for (const [invoiceNumber, lines] of groupedInvoices.entries()) {
       const firstLine = lines[0];
-      const clientData = users.find(u => u.usuari === firstLine.usuari);
-      if (!clientData) continue;
+      let clientData = users.find(u => u.usuari === firstLine.usuari);
+
+      if (!clientData) {
+        clientData = {
+          usuari: firstLine.usuari || 'N/A',
+          rol: 'client',
+          empresa: firstLine.usuari || dictionary?.documents?.unknownClient || 'Client desconegut',
+          fiscalid: 'N/A',
+          adreca: 'N/A',
+          telefon: 'N/A',
+        };
+      }
 
       let base = 0;
       const vatMap = new Map<number, { base: number; amount: number }>();

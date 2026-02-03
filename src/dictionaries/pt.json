@@ -183,6 +183,7 @@
     "invoice": "Fatura",
     "date": "Data",
     "client": "Cliente",
+    "unknownClient": "Cliente desconhecido",
     "view": "Ver",
     "print": "Imprimir PDF",
     "back": "Voltar à lista",
