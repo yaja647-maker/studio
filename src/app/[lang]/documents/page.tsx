@@ -220,91 +220,89 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
             </Button>
           </div>
 
-          <div id="zona-factura">
-            <Card className="w-full p-8 shadow-lg">
-              <CardHeader className="p-0 mb-8">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={100} height={100} />
-                    <h2 className="font-bold text-lg mt-2">TRANSPORTESJADIANI</h2>
-                    <p className="text-sm text-muted-foreground">Carrer de la Logística, 123<br />08039 Barcelona, Espanya</p>
+          <Card id="zona-factura" className="w-full p-8 shadow-lg print:shadow-none print:border-none">
+            <CardHeader className="p-0 mb-8">
+              <div className="flex justify-between items-start">
+                <div>
+                  <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={100} height={100} />
+                  <h2 className="font-bold text-lg mt-2">TRANSPORTESJADIANI</h2>
+                  <p className="text-sm text-muted-foreground">Carrer de la Logística, 123<br />08039 Barcelona, Espanya</p>
+                </div>
+                <div className="text-right">
+                  <CardTitle className="text-3xl font-headline mb-2">{d.invoice.toUpperCase()}</CardTitle>
+                  <p><strong># {invoice.invoiceNumber}</strong></p>
+                  <p>{d.date}: {new Date(invoice.date).toLocaleDateString(lang)}</p>
+                </div>
+              </div>
+              <Separator className="my-6"/>
+              <div className="text-sm">
+                <h3 className="font-semibold mb-2">{d.clientData}</h3>
+                <p className="font-bold">{invoice.clientData.empresa}</p>
+                <p>{invoice.clientData.adreca}</p>
+                <p>{d.fiscalId}: {invoice.clientData.fiscalid}</p>
+                <p>{d.phone}: {invoice.clientData.telefon}</p>
+              </div>
+            </CardHeader>
+            <CardContent className="p-0">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="w-2/4">{d.concept}</TableHead>
+                    <TableHead className="text-right">{d.price}</TableHead>
+                    <TableHead className="text-right">{d.units}</TableHead>
+                    <TableHead className="text-right">{d.discount}</TableHead>
+                    <TableHead className="text-right">{d.vat} (%)</TableHead>
+                    <TableHead className="text-right">{d.net}</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {invoice.lines.map((line, index) => {
+                    const price = parseFloat(line.preu_unitari) || 0;
+                    const units = parseFloat(line.unitats) || 0;
+                    const discount = parseFloat(line.dte) || 0;
+                    const netLineTotal = (price * units) * (1 - discount / 100);
+                    return (
+                      <TableRow key={index}>
+                        <TableCell>{line.concepte}</TableCell>
+                        <TableCell className="text-right">{price.toFixed(2)} €</TableCell>
+                        <TableCell className="text-right">{units}</TableCell>
+                        <TableCell className="text-right">{discount.toFixed(2)} %</TableCell>
+                        <TableCell className="text-right">{line.iva} %</TableCell>
+                        <TableCell className="text-right">{netLineTotal.toFixed(2)} €</TableCell>
+                      </TableRow>
+                    )
+                  })}
+                </TableBody>
+              </Table>
+              <Separator className="my-6"/>
+              <div className="flex justify-end">
+                  <div className="w-full max-w-sm space-y-2 text-sm">
+                      <div className="flex justify-between">
+                          <span>{d.base}</span>
+                          <span>{invoice.totals.base.toFixed(2)} €</span>
+                      </div>
+                      {invoice.totals.vatDetails.map(vat => (
+                           <div key={vat.rate} className="flex justify-between">
+                              <span>{d.vat} {vat.rate}% ({vat.base.toFixed(2)} €)</span>
+                              <span>{vat.amount.toFixed(2)} €</span>
+                          </div>
+                      ))}
+                      <Separator />
+                      <div className="flex justify-between font-bold text-lg">
+                          <span>{d.total}</span>
+                          <span>{invoice.totals.finalTotal.toFixed(2)} €</span>
+                      </div>
                   </div>
-                  <div className="text-right">
-                    <CardTitle className="text-3xl font-headline mb-2">{d.invoice.toUpperCase()}</CardTitle>
-                    <p><strong># {invoice.invoiceNumber}</strong></p>
-                    <p>{d.date}: {new Date(invoice.date).toLocaleDateString(lang)}</p>
-                  </div>
-                </div>
-                <Separator className="my-6"/>
-                <div className="text-sm">
-                  <h3 className="font-semibold mb-2">{d.clientData}</h3>
-                  <p className="font-bold">{invoice.clientData.empresa}</p>
-                  <p>{invoice.clientData.adreca}</p>
-                  <p>{d.fiscalId}: {invoice.clientData.fiscalid}</p>
-                  <p>{d.phone}: {invoice.clientData.telefon}</p>
-                </div>
-              </CardHeader>
-              <CardContent className="p-0">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-2/4">{d.concept}</TableHead>
-                      <TableHead className="text-right">{d.price}</TableHead>
-                      <TableHead className="text-right">{d.units}</TableHead>
-                      <TableHead className="text-right">{d.discount}</TableHead>
-                      <TableHead className="text-right">{d.vat} (%)</TableHead>
-                      <TableHead className="text-right">{d.net}</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {invoice.lines.map((line, index) => {
-                      const price = parseFloat(line.preu_unitari) || 0;
-                      const units = parseFloat(line.unitats) || 0;
-                      const discount = parseFloat(line.dte) || 0;
-                      const netLineTotal = (price * units) * (1 - discount / 100);
-                      return (
-                        <TableRow key={index}>
-                          <TableCell>{line.concepte}</TableCell>
-                          <TableCell className="text-right">{price.toFixed(2)} €</TableCell>
-                          <TableCell className="text-right">{units}</TableCell>
-                          <TableCell className="text-right">{discount.toFixed(2)} %</TableCell>
-                          <TableCell className="text-right">{line.iva} %</TableCell>
-                          <TableCell className="text-right">{netLineTotal.toFixed(2)} €</TableCell>
-                        </TableRow>
-                      )
-                    })}
-                  </TableBody>
-                </Table>
-                <Separator className="my-6"/>
-                <div className="flex justify-end">
-                    <div className="w-full max-w-sm space-y-2 text-sm">
-                        <div className="flex justify-between">
-                            <span>{d.base}</span>
-                            <span>{invoice.totals.base.toFixed(2)} €</span>
-                        </div>
-                        {invoice.totals.vatDetails.map(vat => (
-                             <div key={vat.rate} className="flex justify-between">
-                                <span>{d.vat} {vat.rate}% ({vat.base.toFixed(2)} €)</span>
-                                <span>{vat.amount.toFixed(2)} €</span>
-                            </div>
-                        ))}
-                        <Separator />
-                        <div className="flex justify-between font-bold text-lg">
-                            <span>{d.total}</span>
-                            <span>{invoice.totals.finalTotal.toFixed(2)} €</span>
-                        </div>
-                    </div>
-                </div>
-                 <Separator className="my-6"/>
-                <div className="text-sm space-y-2">
-                    <p><strong>{d.paymentMethod}:</strong> {invoice.paymentMethod}</p>
-                </div>
-              </CardContent>
-              <CardFooter className="p-0 mt-8 pt-4 border-t">
-                 <p className="text-xs text-muted-foreground">{d.legalNotice}</p>
-              </CardFooter>
-            </Card>
-          </div>
+              </div>
+               <Separator className="my-6"/>
+              <div className="text-sm space-y-2">
+                  <p><strong>{d.paymentMethod}:</strong> {invoice.paymentMethod}</p>
+              </div>
+            </CardContent>
+            <CardFooter className="p-0 mt-8 pt-4 border-t">
+               <p className="text-xs text-muted-foreground">{d.legalNotice}</p>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     );
