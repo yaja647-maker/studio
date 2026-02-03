@@ -24,7 +24,7 @@ const getDictionary = (lang: Locale) =>
 export default function LoginPage({ params }: { params: { lang: Locale } }) {
   const lang = use(params).lang;
   const [usuari, setUsuari] = useState('');
-  const [contrasenya, setContrasenya] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [dictionary, setDictionary] = useState<any>(null);
@@ -44,14 +44,14 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
       return;
     }
 
-    if (!usuari || !contrasenya) {
+    if (!usuari || !password) {
       setError(dictionary.login.fillFields);
       setIsLoading(false);
       return;
     }
 
     try {
-      const response = await fetch(`${API_URL}/search?sheet=usuaris&usuari=${encodeURIComponent(usuari)}&contrasenya=${encodeURIComponent(contrasenya)}`);
+      const response = await fetch(`${API_URL}/search?sheet=usuaris&usuari=${encodeURIComponent(usuari)}&password=${encodeURIComponent(password)}`);
       
       if (response.ok) {
         const data: User[] = await response.json();
@@ -108,8 +108,8 @@ export default function LoginPage({ params }: { params: { lang: Locale } }) {
                 id="password"
                 type="password"
                 placeholder="********"
-                value={contrasenya}
-                onChange={(e) => setContrasenya(e.target.value)}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
