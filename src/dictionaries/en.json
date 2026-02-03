@@ -9,7 +9,8 @@
     "quote": "Request a Quote",
     "tracking": "Tracking",
     "login": "Login",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "documents": "Documents"
   },
   "home": {
     "heroTitle": "TRANSPORTESJADIANI: Global Logistics Solutions",
@@ -127,7 +128,8 @@
     "cookiesPolicy": "Cookies Policy",
     "contactUs": "Contact Us",
     "rightsReserved": "All rights reserved.",
-    "tracking": "Tracking"
+    "tracking": "Tracking",
+    "documents": "Documents"
   },
   "legal": {
     "legalTitle": "Legal Notice",
@@ -172,5 +174,36 @@
     "nameLabel": "User Name",
     "companyLabel": "Company",
     "logoutButton": "Logout"
+  },
+  "documents": {
+    "title": "My Invoices",
+    "subtitle": "Here you can view and print your invoices.",
+    "adminTitle": "Invoice Management",
+    "adminSubtitle": "View and manage all system invoices.",
+    "invoice": "Invoice",
+    "date": "Date",
+    "client": "Client",
+    "view": "View",
+    "print": "Print PDF",
+    "back": "Back to list",
+    "loading": "Loading documents...",
+    "noInvoices": "No invoices found.",
+    "error": "Error loading data. Please try again.",
+    "invoiceData": "Invoice Data",
+    "clientData": "Client Data",
+    "fiscalId": "Tax ID",
+    "address": "Address",
+    "phone": "Phone",
+    "concept": "Concept",
+    "price": "Price",
+    "units": "Units",
+    "discount": "Disc. (%)",
+    "net": "Net Amount",
+    "summary": "Summary",
+    "base": "Taxable Base",
+    "vat": "VAT",
+    "total": "TOTAL",
+    "paymentMethod": "Payment Method",
+    "legalNotice": "TRANSPORTESJADIANI S.L. Registered in the Mercantile Registry of Barcelona, Volume XXX, Folio YYY, Sheet B-ZZZ. In compliance with the LOPD, your data will be included in an automated file for the management of the commercial relationship."
   }
 }

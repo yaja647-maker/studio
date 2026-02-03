@@ -9,7 +9,8 @@
     "quote": "Pedir Orçamento",
     "tracking": "Rastreamento",
     "login": "Acessar",
-    "dashboard": "Painel"
+    "dashboard": "Painel",
+    "documents": "Documentos"
   },
   "home": {
     "heroTitle": "TRANSPORTESJADIANI: Soluções Logísticas Globais",
@@ -127,7 +128,8 @@
     "cookiesPolicy": "Política de Cookies",
     "contactUs": "Contate-nos",
     "rightsReserved": "Todos os direitos reservados.",
-    "tracking": "Rastreamento"
+    "tracking": "Rastreamento",
+    "documents": "Documentos"
   },
   "legal": {
     "legalTitle": "Aviso Legal",
@@ -172,5 +174,36 @@
     "nameLabel": "Nome de usuário",
     "companyLabel": "Empresa",
     "logoutButton": "Sair"
+  },
+  "documents": {
+    "title": "Minhas Faturas",
+    "subtitle": "Aqui você pode consultar e imprimir suas faturas.",
+    "adminTitle": "Gestão de Faturas",
+    "adminSubtitle": "Consulte e gerencie todas as faturas do sistema.",
+    "invoice": "Fatura",
+    "date": "Data",
+    "client": "Cliente",
+    "view": "Ver",
+    "print": "Imprimir PDF",
+    "back": "Voltar à lista",
+    "loading": "Carregando documentos...",
+    "noInvoices": "Nenhuma fatura encontrada.",
+    "error": "Erro ao carregar os dados. Por favor, tente novamente.",
+    "invoiceData": "Dados da Fatura",
+    "clientData": "Dados do Cliente",
+    "fiscalId": "NIF/CNPJ",
+    "address": "Endereço",
+    "phone": "Telefone",
+    "concept": "Conceito",
+    "price": "Preço",
+    "units": "Unidades",
+    "discount": "Desc. (%)",
+    "net": "Valor Líquido",
+    "summary": "Resumo",
+    "base": "Base de Cálculo",
+    "vat": "IVA",
+    "total": "TOTAL",
+    "paymentMethod": "Forma de Pagamento",
+    "legalNotice": "TRANSPORTESJADIANI S.L. Registrada no Registo Comercial de Barcelona, Tomo XXX, Fólio YYY, Folha B-ZZZ. Em conformidade com a LOPD, os seus dados serão incluídos num ficheiro automatizado para a gestão da relação comercial."
   }
 }
