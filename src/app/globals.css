@@ -10,24 +10,24 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 140 60% 40%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 140 10% 90%;
+    --primary: 221 83% 53%; /* Blue */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 5% 90%; /* Neutral light gray */
     --secondary-foreground: 240 10% 3.9%;
-    --muted: 140 10% 90%;
+    --muted: 240 5% 90%; /* Neutral light gray */
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 140 60% 95%;
-    --accent-foreground: 140 60% 30%;
+    --accent: 25 95% 95%; /* Light Orange */
+    --accent-foreground: 25 95% 50%; /* Orange */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 140 60% 40%;
-    --chart-1: 140 60% 40%;
-    --chart-2: 140 50% 50%;
-    --chart-3: 140 40% 60%;
-    --chart-4: 140 30% 70%;
-    --chart-5: 140 20% 80%;
+    --ring: 221 83% 53%; /* Blue */
+    --chart-1: 221 83% 53%; /* Blue */
+    --chart-2: 25 95% 50%; /* Orange */
+    --chart-3: 221 60% 70%; /* Lighter Blue */
+    --chart-4: 25 80% 70%; /* Lighter Orange */
+    --chart-5: 221 40% 80%; /* Lightest Blue */
     --radius: 0.5rem;
   }
 
@@ -38,24 +38,24 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 140 70% 60%;
-    --primary-foreground: 240 10% 3.9%;
-    --secondary: 140 10% 15.9%;
+    --primary: 221 83% 63%; /* Lighter Blue */
+    --primary-foreground: 221 20% 9.0%;
+    --secondary: 240 4% 15.9%; /* Neutral dark gray */
     --secondary-foreground: 0 0% 98%;
-    --muted: 140 10% 15.9%;
+    --muted: 240 4% 15.9%; /* Neutral dark gray */
     --muted-foreground: 240 5% 64.9%;
-    --accent: 140 10% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 25 20% 12%; /* Dark Orange */
+    --accent-foreground: 25 95% 60%; /* Orange */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 140 10% 15.9%;
-    --input: 140 10% 15.9%;
-    --ring: 140 70% 60%;
-    --chart-1: 140 70% 60%;
-    --chart-2: 140 60% 50%;
-    --chart-3: 140 50% 40%;
-    --chart-4: 140 40% 30%;
-    --chart-5: 140 30% 20%;
+    --border: 240 4% 15.9%; /* Neutral dark gray */
+    --input: 240 4% 15.9%; /* Neutral dark gray */
+    --ring: 221 83% 63%; /* Lighter Blue */
+    --chart-1: 221 83% 63%; /* Lighter Blue */
+    --chart-2: 25 95% 60%; /* Orange */
+    --chart-3: 221 60% 50%;
+    --chart-4: 25 80% 50%;
+    --chart-5: 221 40% 40%;
   }
 }
 

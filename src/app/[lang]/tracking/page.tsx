@@ -71,7 +71,7 @@ export default function TrackingPage({ params }: { params: { lang: Locale } }) {
       case 'En trànsit':
         return { value: 50, colorClass: 'bg-blue-500', label: dictionary.tracking.statusTransit };
       case 'Entregado':
-        return { value: 100, colorClass: 'bg-green-500', label: dictionary.tracking.statusDelivered };
+        return { value: 100, colorClass: 'bg-blue-700', label: dictionary.tracking.statusDelivered };
       default:
         return { value: 0, colorClass: 'bg-gray-500', label: dictionary.tracking.statusUnknown };
     }

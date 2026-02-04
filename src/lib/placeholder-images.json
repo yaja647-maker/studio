@@ -8,21 +8,21 @@
     },
     {
       "id": "service-sea-freight",
-      "description": "A large container ship with many green containers stacked on its deck.",
-      "imageUrl": "https://images.unsplash.com/photo-1599846764536-538a7a2a537f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb250YWluZXIlMjBzaGlwJTIwZ3JlZW58ZW5wwHx8fHwxNzY1NDAxMzU0fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "container ship green"
+      "description": "A large container ship with many blue containers on a blue ocean.",
+      "imageUrl": "https://images.unsplash.com/photo-1611782240298-5442a8d1e2e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250YWluZXIlMjBzaGlwJTIwYmx1ZXxlbnwwfHx8fDE3MjE4MzY4MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "container ship blue"
     },
     {
       "id": "service-air-freight",
-      "description": "A cargo airplane flying over lush green fields and landscape.",
-      "imageUrl": "https://images.unsplash.com/photo-1570751049110-540478b394486?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHBsYW5lJTIwZ3JlZW58ZW5wwHx8fHwxNzY1NDAxNDIwfDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "cargo plane green"
+      "description": "A white cargo airplane flying in a clear blue sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1542362529-6241a76336c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHBsYW5lJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3MjE4MzY4ODV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "cargo plane blue"
     },
     {
       "id": "service-warehousing",
-      "description": "The interior of a warehouse with a green forklift moving pallets.",
-      "imageUrl": "https://images.unsplash.com/photo-1664288342211-133939023438?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBncmVlbnxlbnwwfHx8fDE3NjU0MDE0NzV8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "warehouse green"
+      "description": "The interior of a warehouse with an orange forklift moving pallets.",
+      "imageUrl": "https://images.unsplash.com/photo-1565799528822-774f57262529?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBvcmFuZ2UlMjBmb3JrbGlmdHxlbnwwfHx8fDE3MjE4MzY5NDF8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "warehouse orange"
     },
     {
       "id": "about-us-team",
@@ -32,9 +32,9 @@
     },
     {
       "id": "blog-green-logistics",
-      "description": "A winding road through a lush green forest, symbolizing sustainable transport routes.",
-      "imageUrl": "https://images.unsplash.com/photo-1505832049374-cfcf7013e147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncmVlbiUyMHJvYWR8ZW58MHx8fHwxNzY1NzE0NzU4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "green road"
+      "description": "A winding road through a forest with orange and yellow autumn leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aW5kaW5nJTIwcm9hZCUyMGF1dHVtbnxlbnwwfHx8fDE3MjE4MzcwMjJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "autumn road"
     },
     {
       "id": "blog-warehouse-automation",
