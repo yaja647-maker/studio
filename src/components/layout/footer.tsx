@@ -16,7 +16,7 @@ export function Footer({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4 md:col-span-1">
             <Link href={`/${lang}`} className="flex items-center gap-2 text-white">
-                <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={64} height={64} className="h-14 w-auto" />
+                <Image src="/icon.png" alt="TRANSPORTSJADIANI Logo" width={64} height={64} className="h-14 w-auto" />
             </Link>
             <p className="text-sm max-w-xs">{dictionary.slogan}</p>
           </div>
@@ -50,7 +50,7 @@ export function Footer({
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
-          <p>&copy; {currentYear} TRANSPORTESJADIANI. {dictionary.rightsReserved}</p>
+          <p>&copy; {currentYear} TRANSPORTSJADIANI. {dictionary.rightsReserved}</p>
         </div>
       </div>
     </footer>

@@ -53,7 +53,7 @@ export function Header({
     <header className="bg-card shadow-sm sticky top-0 z-40 print:hidden">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2">
-          <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={64} height={64} className="h-16 w-auto" />
+          <Image src="/icon.png" alt="TRANSPORTSJADIANI Logo" width={64} height={64} className="h-16 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {visibleNavItems.map(item => (
@@ -102,7 +102,7 @@ export function Header({
             <SheetContent side="left">
               <div className="flex flex-col gap-6 p-6">
                 <Link href={`/${lang}`} className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={64} height={64} className="h-12 w-auto" />
+                  <Image src="/icon.png" alt="TRANSPORTSJADIANI Logo" width={64} height={64} className="h-12 w-auto" />
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {visibleNavItems.map(item => (

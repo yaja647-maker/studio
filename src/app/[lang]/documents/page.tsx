@@ -220,12 +220,12 @@ export default function DocumentsPage({ params }: { params: { lang: Locale } }) 
             </Button>
           </div>
 
-          <Card id="zona-factura" className="w-full p-8 shadow-lg print:shadow-none print:border-none">
+          <Card id="zona-factura" className="w-full p-8 print:shadow-none print:border-none">
             <CardHeader className="p-0 mb-8">
               <div className="flex justify-between items-start">
                 <div>
-                  <Image src="/icon.png" alt="TRANSPORTESJADIANI Logo" width={100} height={100} />
-                  <h2 className="font-bold text-lg mt-2">TRANSPORTESJADIANI</h2>
+                  <Image src="/icon.png" alt="TRANSPORTSJADIANI Logo" width={100} height={100} />
+                  <h2 className="font-bold text-lg mt-2">TRANSPORTSJADIANI</h2>
                   <p className="text-sm text-muted-foreground">Carrer de la Logística, 123<br />08039 Barcelona, Espanya</p>
                 </div>
                 <div className="text-right">

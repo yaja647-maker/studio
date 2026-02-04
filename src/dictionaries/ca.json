@@ -13,7 +13,7 @@
     "documents": "Documents"
   },
   "home": {
-    "heroTitle": "TRANSPORTESJADIANI: Solucions Logístiques Globals",
+    "heroTitle": "TRANSPORTSJADIANI: Solucions Logístiques Globals",
     "heroSubtitle": "Connectem el teu negoci amb el món. Eficiència, fiabilitat i tecnologia a cada enviament.",
     "ctaButton": "Explora els nostres serveis"
   },
@@ -46,7 +46,7 @@
   "about": {
     "title": "La Nostra Missió",
     "subtitle": "Impulsant el comerç global amb solucions logístiques innovadores i un compromís indestructible amb els nostres clients.",
-    "p1": "Fundada el 2010 a Barcelona, TRANSPORTESJADIANI va néixer amb l'objectiu de simplificar la complexitat de la logística internacional. El nostre equip, format per experts en comerç exterior, transport i tecnologia, treballa per oferir un servei transparent, eficient i personalitzat.",
+    "p1": "Fundada el 2010 a Barcelona, TRANSPORTSJADIANI va néixer amb l'objectiu de simplificar la complexitat de la logística internacional. El nostre equip, format per experts en comerç exterior, transport i tecnologia, treballa per oferir un servei transparent, eficient i personalitzat.",
     "p2": "Creiem en la tecnologia com a pilar fonamental. Per això, invertim constantment en sistemes de seguiment en temps real, plataformes de gestió intuïtives i solucions d'automatització que aporten valor real a la cadena de subministrament dels nostres socis. La nostra missió és ser més que un proveïdor; aspirem a ser el teu aliat estratègic en logística."
   },
   "contact": {
@@ -56,7 +56,7 @@
     "address": "Adreça",
     "addressValue": "Carrer de la Logística, 123, 08039 Barcelona, Espanya",
     "email": "Correu Electrònic",
-    "emailValue": "contact@transportesjadiani.com",
+    "emailValue": "contact@transportsjadiani.com",
     "phone": "Telèfon",
     "phoneValue": "+34 930 123 456",
     "form": {
@@ -78,7 +78,7 @@
         "title": "La Revolució Verda en Logística",
         "excerpt": "Descobreix com la sostenibilitat està transformant la cadena de subministrament i per què és crucial per al futur del planeta i del teu negoci.",
         "date": "15 de Juliol, 2024",
-        "author": "Per l'equip de TRANSPORTESJADIANI",
+        "author": "Per l'equip de TRANSPORTSJADIANI",
         "cta": "Llegir Més"
       },
       {
@@ -87,7 +87,7 @@
         "title": "Automatització de Magatzems: El Futur és Ara",
         "excerpt": "Explorem les últimes tecnologies en automatització de magatzems, des de robots autònoms fins a sistemes de gestió intel·ligent.",
         "date": "5 de Juliol, 2024",
-        "author": "Per l'equip de TRANSPORTESJADIANI",
+        "author": "Per l'equip de TRANSPORTSJADIANI",
         "cta": "Llegir Més"
       },
       {
@@ -96,7 +96,7 @@
         "title": "5 Consells per a Enviaments Internacionals Eficients",
         "excerpt": "Optimitzar els teus enviaments internacionals pot ser complex. Aquí tens cinc consells clau per estalviar temps i diners.",
         "date": "28 de Juny, 2024",
-        "author": "Per l'equip de TRANSPORTESJADIANI",
+        "author": "Per l'equip de TRANSPORTSJADIANI",
         "cta": "Llegir Més"
       }
     ]
@@ -135,7 +135,7 @@
     "legalTitle": "Avís Legal",
     "privacyTitle": "Política de Privacitat",
     "cookiesTitle": "Política de Cookies",
-    "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TRANSPORTESJADIANI (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
+    "content": "Aquesta és una pàgina de mostra. El contingut legal complet hauria de ser redactat per un professional. Aquest text serveix com a marcador de posició per demostrar l'estructura de la pàgina. TRANSPORTSJADIANI (nom fictici) es presenta com una empresa de serveis logístics. Tota la informació, imatges i dades tècniques són simulades amb finalitats educatives en el marc d'un projecte de Firebase Studio."
   },
   "tracking": {
     "title": "Localitza el teu enviament",
@@ -205,6 +205,6 @@
     "vat": "IVA",
     "total": "TOTAL",
     "paymentMethod": "Forma de Pagament",
-    "legalNotice": "TRANSPORTESJADIANI S.L. Inscrita al Registre Mercantil de Barcelona, Tom XXX, Foli YYY, Full B-ZZZ. En compliment de la LOPD, les seves dades seran incloses en un fitxer automatitzat per a la gestió de la relació comercial."
+    "legalNotice": "TRANSPORTSJADIANI S.L. Inscrita al Registre Mercantil de Barcelona, Tom XXX, Foli YYY, Full B-ZZZ. En compliment de la LOPD, les seves dades seran incloses en un fitxer automatitzat per a la gestió de la relació comercial."
   }
 }

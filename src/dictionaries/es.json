@@ -13,7 +13,7 @@
     "documents": "Documentos"
   },
   "home": {
-    "heroTitle": "TRANSPORTESJADIANI: Soluciones Logísticas Globales",
+    "heroTitle": "TRANSPORTSJADIANI: Soluciones Logísticas Globales",
     "heroSubtitle": "Conectamos tu negocio con el mundo. Eficiencia, fiabilidad y tecnología en cada envío.",
     "ctaButton": "Explora nuestros servicios"
   },
@@ -46,7 +46,7 @@
   "about": {
     "title": "Nuestra Misión",
     "subtitle": "Impulsando el comercio global con soluciones logísticas innovadoras y un compromiso inquebrantable con nuestros clientes.",
-    "p1": "Fundada en 2010 en Barcelona, TRANSPORTESJADIANI nació con el objetivo de simplificar la complejidad de la logística internacional. Nuestro equipo, formado por expertos en comercio exterior, transporte y tecnología, trabaja para ofrecer un servicio transparente, eficiente y personalizado.",
+    "p1": "Fundada en 2010 en Barcelona, TRANSPORTSJADIANI nació con el objetivo de simplificar la complejidad de la logística internacional. Nuestro equipo, formado por expertos en comercio exterior, transporte y tecnología, trabaja para ofrecer un servicio transparente, eficiente y personalizado.",
     "p2": "Creemos en la tecnología como pilar fundamental. Por ello, invertimos constantemente en sistemas de seguimiento en tiempo real, plataformas de gestión intuitivas y soluciones de automatización que aportan valor real a la cadena de suministro de nuestros socios. Nuestra misión es ser más que un proveedor; aspiramos a ser tu aliado estratégico en logística."
   },
   "contact": {
@@ -56,7 +56,7 @@
     "address": "Dirección",
     "addressValue": "Calle de la Logística, 123, 08039 Barcelona, España",
     "email": "Correo Electrónico",
-    "emailValue": "contact@transportesjadiani.com",
+    "emailValue": "contact@transportsjadiani.com",
     "phone": "Teléfono",
     "phoneValue": "+34 930 123 456",
     "form": {
@@ -78,7 +78,7 @@
         "title": "La Revolución Verde en Logística",
         "excerpt": "Descubre cómo la sostenibilidad está transformando la cadena de suministro y por qué es crucial para el futuro del planeta y de tu negocio.",
         "date": "15 de Julio, 2024",
-        "author": "Por el equipo de TRANSPORTESJADIANI",
+        "author": "Por el equipo de TRANSPORTSJADIANI",
         "cta": "Leer Más"
       },
       {
@@ -87,7 +87,7 @@
         "title": "Automatización de Almacenes: El Futuro es Ahora",
         "excerpt": "Exploramos las últimas tecnologías en automatización de almacenes, desde robots autónomos hasta sistemas de gestión inteligente.",
         "date": "5 de Julio, 2024",
-        "author": "Por el equipo de TRANSPORTESJADIANI",
+        "author": "Por el equipo de TRANSPORTSJADIANI",
         "cta": "Leer Más"
       },
       {
@@ -96,7 +96,7 @@
         "title": "5 Consejos para Envíos Internaciones Eficientes",
         "excerpt": "Optimizar tus envíos internacionales puede ser complejo. Aquí tienes cinco consejos clave para ahorrar tiempo y dinero.",
         "date": "28 de Junio, 2024",
-        "author": "Por el equipo de TRANSPORTESJADIANI",
+        "author": "Por el equipo de TRANSPORTSJADIANI",
         "cta": "Leer Más"
       }
     ]
@@ -135,7 +135,7 @@
     "legalTitle": "Aviso Legal",
     "privacyTitle": "Política de Privacidad",
     "cookiesTitle": "Política de Cookies",
-    "content": "Esta es una página de muestra. El contenido legal completo debe ser redactado por un profesional. Este texto sirve como marcador de posición para demostrar la estructura de la página. TRANSPORTESJADIANI (nombre ficticio) se presenta como una empresa de servicios logísticos. Toda la información, imágenes y datos técnicos son simulados con fines educativos en el marco de un proyecto de Firebase Studio."
+    "content": "Esta es una página de muestra. El contenido legal completo debe ser redactado por un profesional. Este texto sirve como marcador de posición para demostrar la estructura de la página. TRANSPORTSJADIANI (nombre ficticio) se presenta como una empresa de servicios logísticos. Toda la información, imágenes y datos técnicos son simulados con fines educativos en el marco de un proyecto de Firebase Studio."
   },
   "tracking": {
     "title": "Localiza tu envío",
@@ -205,6 +205,6 @@
     "vat": "IVA",
     "total": "TOTAL",
     "paymentMethod": "Forma de Pago",
-    "legalNotice": "TRANSPORTESJADIANI S.L. Inscrita en el Registro Mercantil de Barcelona, Tomo XXX, Folio YYY, Hoja B-ZZZ. En cumplimiento de la LOPD, sus datos serán incluidos en un fichero automatizado para la gestión de la relación comercial."
+    "legalNotice": "TRANSPORTSJADIANI S.L. Inscrita en el Registro Mercantil de Barcelona, Tomo XXX, Folio YYY, Hoja B-ZZZ. En cumplimiento de la LOPD, sus datos serán incluidos en un fichero automatizado para la gestión de la relación comercial."
   }
 }

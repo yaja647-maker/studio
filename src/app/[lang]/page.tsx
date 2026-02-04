@@ -11,7 +11,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     <section className="relative h-[calc(100vh-5rem)] w-full">
       <Image
         src="/imatgefons.png"
-        alt="TRANSPORTESJADIANI"
+        alt="TRANSPORTSJADIANI"
         fill
         className="object-cover"
         data-ai-hint="logistics transport"

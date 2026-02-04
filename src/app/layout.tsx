@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'TRANSPORTESJADIANI',
-  description: 'TRANSPORTESJADIANI - Solucions logístiques per a un món connectat.',
+  title: 'TRANSPORTSJADIANI',
+  description: 'TRANSPORTSJADIANI - Solucions logístiques per a un món connectat.',
 };
 
 export default function RootLayout({
